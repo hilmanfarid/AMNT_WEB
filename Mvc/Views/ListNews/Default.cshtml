@@ -1,0 +1,60 @@
+<section class="news">
+    <div class="container-fluid">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-grid="clear">
+            <div class="left-point">
+                <h1 class="wow slideInUp" id="titleTop1"></h1>
+                <p class="wow slideInUp" id="descTop1"></p>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-grid="clear" id="listnews"></div>
+    </div>
+</section>
+<script type="text/javascript">
+    var dataNews;
+    setListNews();
+
+    function setListNews() {
+        $.ajax({
+            type: 'GET',
+            url: "@System.Configuration.ConfigurationManager.AppSettings["ApiUrl"]" + "listnews/getlistnews",
+            async: false,
+            success: function (result) {
+                dataNews = result;
+                var listnews = "";
+                if (result.length > 1) {
+                    $("#titleTop1").html(result[0].title);
+                    $("#descTop1").html(result[0].desc);
+                }
+                for (var i = 0; i < result.length; i++) {
+                    var desc = result[i].desc;
+                    var id_new = result[i].id_new;
+                    var id_tag = result[i].id_tag;
+                    var name_tag = result[i].name_tag;
+                    var picture = result[i].picture;
+                    var title = result[i].title;
+
+                    listnews += '<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-grid="clear">' +
+                                    '<div class="card wow slideInUp" data-wow-delay="0.1s">' +
+                                        '<a href="#!">' +
+                                            '<div class="card__thumb">' +
+                                                '<img src="@System.Configuration.ConfigurationManager.AppSettings["ApiUrl"]'+ picture +'" class="card__img">' +
+                                            '</div>' +
+                                            '<div class="card__content">' +
+                                                '<h3 class="card__title">'+name_tag+'</h3>' +
+                                                '<h4 class="card__subtitle">' +
+                                                    title +
+                                                '</h4>' +
+                                                '<p class="card__text">' +
+                                                    desc +
+                                                '</p>' +
+                                            '</div>' +
+                                        '</a>' +
+                                    '</div>' +
+                                '</div>';
+                }
+
+                $("#listnews").html(listnews);
+            }
+        });
+    }
+</script>

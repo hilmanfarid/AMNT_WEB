@@ -1,0 +1,553 @@
+﻿<%@ Master Language="C#" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+<body class="main-body">
+    <form id="form1" runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Operations | PT. Amman Mineral Nusa Tenggara</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    
+    <!-- Stylesheets Declaration - START -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/stylesheets/public/vendor/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/stylesheets/public/vendor/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/stylesheets/public/vendor/colorbox.css">
+    
+    <link rel="stylesheet" href="/assets/stylesheets/public/vendor/sweet-scroll.css">
+    <link rel="stylesheet" href="/assets/stylesheets/public/global.min.css">
+    <link rel="stylesheet" href="/assets/stylesheets/public/vendor/about.min.css">
+    <link rel="stylesheet" href="/assets/stylesheets/public/vendor/operation.css">
+    <link rel="stylesheet" href="/assets/stylesheets/public/vendor/responsive.css">
+    <!-- Stylesheets Declaration - END -->
+    
+    <!-- javascript -->
+    <script type="text/javascript" src="/assets/scriptings/public/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/scriptings/public/vendor/owl.carousel.min.js"></script>    
+
+    <asp:ContentPlaceHolder ID="headerPlaceholder" runat="server" />
+    <div class="templatemo-top-bar" id="templatemo-top">
+        <div class="container">
+            <div class="subheader">
+                <div class="sosmed pull-right">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="templatemo-top-menu">
+        <div class="container">
+            <div class="navbar navbar-default" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="home" class="navbar-brand">
+                            <img src="/assets/storages/image/brand/logo-second.png">
+                        </a>
+                    </div>
+                    <div class="navbar-collapse collapse" id="templatemo-nav-bar">
+                        <ul class="nav navbar-nav navbar-right" style="margin-top: 19px;">
+                            <li>
+                                <button type="button" class="btn btn-lg btn-popup" data-toggle="modal" data-target="#myModal"><i class="fa fa-th-large" aria-hidden="true"></i> &nbsp MENU</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div id="wrapper">
+        <div>
+            <section class="section" id="first">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="container">
+                            <article>
+                                <div class="title-text" align="center">
+                                    <h1>OUR OPERATIONS</h1>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 pull-right img-operation">
+                                    <img class="img-responsive" src="/assets/storages/image/component/overview.png">
+                                    <p>PT AMNT OPERATIONS IN SUMBAWA</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 pull-left">
+                                     <h2 class="section__title">OVERVIEW</h2>
+                                    <p>The Batu Hijau project is a 25,000-hectare copper and gold mine site and one of the most promising prospects in West Sumbawa Regency, Indonesia. From production to transportation and the upcoming refinery, we embed a sustainable environmental pratice and accentuate health and safety in the same breath.</p>
+                                    <button class="btn btn--ghost btn-first" data-scroll="#second">Production ><i class="icon-angle-right"></i></button>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="second">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="container">
+                            <article>
+                                <div class="title-text" align="center">
+                                    <h1>OUR OPERATIONS</h1>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 pull-right img-operation">
+                                    <div class="img-operation">
+                                        <img class="img-responsive" src="/assets/storages/image/component/production.png">
+                                    </div>
+                                    <div class="desc">
+                                        <p>COPPER ORE</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-6 pull-left">
+                                    <h2 class="section__title">PRODUCTION</h2>
+                                    <p>Production began in 2000 and has yielded more than eight million ounces of gold and 3.6 million tons of copper to date. In 2016, we produced an outstanding 216,000 tons of copper and 800,000 ounces of gold. But the largest and most substantial production will be generated from Phase 7. Preparation is underway, extending the mine life by 2025 and followed by long-term stockpiles processing until 2031.</p>
+                                    <p><a class="read-more" href="##">[ Read the Report ]</a></p>
+                                    <ul class="list--inline">
+                                        <li><button class="btn btn--ghost btn-prev" data-scroll="#first"><i class="icon-angle-left"></i>< Overview</button></li>
+                                        <li><button class="btn btn--ghost" data-scroll="#third">Shipping Concentrate ><i class="icon-angle-right"></i></button></li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="third">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="container">
+                            <article>
+                                <div class="title-text" align="center">
+                                    <h1>OUR OPERATIONS</h1>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 pull-right img-operation">
+                                    <img class="img-responsive" src="/assets/storages/image/component/transports.png">
+                                    <p>PT AMNT PROCESSING FACILITY</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 pull-left">
+                                    <h2 class="section__title">Procesing</h2>
+                                    <p>PT AMNT applies regular open mining shovel mwthod using 111 haul trucks. Our site has on-site supporting facilities that are capable of processing up to 120.000 tonnes per day, comprising of two semi-autonomous grinding mills, four ball mills, flotation circuits, as well as 157 MW coal-and diesel-fired power plants.</p>
+                                    <p><a class="read-more" href="##">[ Learn More ]</a></p>
+                                    <ul class="list--inline">
+                                        <li><button class="btn btn--ghost btn-prev" data-scroll="#second"><i class="icon-angle-left"></i>< Prodution</button></li>
+                                        <li><button class="btn btn--ghost" data-scroll="#fourth">Refinery ><i class="icon-angle-right"></i></button></li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="fourth">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="container">
+                            <article>
+                                <div class="title-text" align="center">
+                                    <h1>OUR OPERATIONS</h1>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 pull-right img-operation">
+                                    <img class="img-responsive" src="/assets/storages/image/component/refinerys.png">
+                                    <p>COPPER CATHODE</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 pull-left">
+                                    <h2 class="section__title">REFINERY</h2>
+                                    <p>Law No. 4/2009 on Mineral and Coal Mining mandates a refinery in progress for every mining entity. The smelter development is our immediate priority. It is expected to start construction in early 2018, providing up to two million tons of capacity.</p>
+                                    <p><a class="read-more" href="##">[ Learn More ]</a></p>
+                                    <ul class="list--inline">
+                                        <li><button class="btn btn--ghost btn-prev" data-scroll="#third"><i class="icon-angle-left"></i>< Procesing</button></li>
+                                        <li><button class="btn btn--ghost" data-scroll="#fifth">Concentrate Shipping ><i class="icon-angle-right"></i></button></li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="fifth">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="container">
+                            <article>
+                                <div class="title-text" align="center">
+                                    <h1>OUR OPERATIONS</h1>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 pull-right img-operation">
+                                    <img class="img-responsive" src="/assets/storages/image/component/new.png">
+                                    <p>SHIPPING ACTIVITIES AT PORT BENETE</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 pull-left">
+                                    <h2 class="section__title">CONCENTRATE SHIPPING</h2>
+                                    <p>The remakable mineral deposit is not a Batu Hijau exclusive. A rigorous assessment of Elang and Nangka prospects gives early indications of promising future projects. Subject to the Government of Indonesia's approval, PT AMNT may commence the construction phase in the next XX years.</p>
+                                    <ul class="list--inline">
+                                        <li><button class="btn btn--ghost btn-prev" data-scroll="#fourth"><i class="icon-angle-left"></i>< Refinery</button></li>
+                                        <li><button class="btn btn--ghost" data-scroll="#sixth">Expansion ><i class="icon-angle-right"></i></button></li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="sixth">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="container">
+                            <article>
+                                <div class="title-text" align="center">
+                                    <h1>OUR OPERATIONS</h1>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 pull-right img-operation">
+                                    <img class="img-responsive" src="/assets/storages/image/component/expansion.png">
+                                    <!--<p>SHIPPING ACTIVITIES AT PORT BENETE</p>-->
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 pull-left">
+                                    <h2 class="section__title">EXPANSION</h2>
+                                    <p>The remakable mineral deposit is not a Batu Hijau exclusive. A rigorous assessment of Elang and Nangka prospects gives early indications of promising future projects. Subject to the Government of Indonesia's approval, PT AMNT may commence the construction phase in the next XX years.</p>
+                                    <p><a class="read-more" href="##">[ Project Locator ]</a></p>
+                                    <ul class="list--inline">
+                                        <li><button class="btn btn--ghost btn-prev" data-scroll="#fifth"><i class="icon-angle-left"></i>< Consentrate Shipping</button></li>
+                                        <li><button class="btn btn--ghost" data-scroll="#seven">Suntainable Environmental Practice ><i class="icon-angle-right"></i></button></li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="seven">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="container">
+                            <article>
+                                <div class="title-text" align="center">
+                                    <h1>OUR OPERATIONS</h1>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 pull-right img-operation">
+                                    <img class="img-responsive" src="/assets/storages/image/component/sustainable.png">
+                                    <p>ENSURING A SUSTAINABLE OPERATIONS</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 pull-left">
+                                    <h2 class="section__title">SUSTAINABLE ENVIRONMENTAL PRACTICE</h2>
+                                    <p>We pursue innovation to glean the finest solution for responsible environmental preservation. At the nexus of our heart, settles a solid leadership and the application of proficient, transparent, and sustainable environmental management.</p>
+                                    <p><a class="read-more" href="##">[ See Recognition ]</a></p>
+                                    <ul class="list--inline">
+                                        <li><button class="btn btn--ghost btn-prev" data-scroll="#sixth"><i class="icon-angle-left"></i>< Expansion</button></li>
+                                        <li><button class="btn btn--ghost" data-scroll="#eight">Health & Safety ><i class="icon-angle-right"></i></button></li>
+                                    </ul>   
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="eight">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="container">
+                            <article>
+                                <div class="title-text" align="center">
+                                    <h1>OUR OPERATIONS</h1>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 pull-right img-operation img-absolute">
+                                    <img class="img-responsive img-people" src="/assets/storages/image/component/people.png">
+                                    <p>RESPONSE TEAM ON GROUND</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 pull-left">
+                                    <h2 class="section__title">HEALTH & SAFETY</h2>
+                                    <p>The vision as a valuable and respected firm over the attainment of performance in the mining industry envisages the importance of the highest safety standart. This practice rigorously follows PT AMNT's Health, Safety, and Corporate Loss Control Policy.</p>
+                                    <p><a class="read-more" href="##">[ Read the Report ]</a></p>
+                                    <ul class="list--inline">
+                                        <li><button class="btn btn--ghost btn-prev" data-scroll="#seven"><i class="icon-angle-left"></i>< Sustainable Environmental Practice</button></li>
+                                        <li><button class="btn btn--ghost" data-scroll="#nine">Recognition ><i class="icon-angle-right"></i></button></li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-awards" id="nine">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="container">
+                            <article>
+                                <div class="title-text" align="center">
+                                    <h1>OUR OPERATIONS</h1>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 padding-mobile">
+                                    <div class="title-awards">
+                                        <div class="pull-left">
+                                            <h2 class="section__title">RECOGNITION</h2>
+                                        </div>
+                                        <div class="pull-right">
+                                            <button class="btn btn--ghost" data-scroll="#first"><i class="icon-angle-left pull-right"></i>[ Back ]</button>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        <div class="col-xs-12 col-md-12 col-img-awards">
+                                            <div class="col-xs-6 col-sm-6 col-md-3 text-center col-img">
+                                                <img src="/assets/storages/image/component/aditama.png">
+                                                <div class="article">
+                                                    <p>ADITAMA</p>
+                                                    <p class="years">2011</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-6 col-md-3 text-center col-img">
+                                                <img src="/assets/storages/image/component/adma.png">
+                                                <div class="article">
+                                                    <p>PADMA AWARDS</p>
+                                                    <p class="years">BRONZE</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-6 col-md-3 text-center col-img">
+                                                <img src="/assets/storages/image/component/ipte.png">
+                                                <div class="article">
+                                                    <p>IPRA Golden</p>
+                                                    <p class="years">2016</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-6 col-md-3 text-center col-img">
+                                                <img src="/assets/storages/image/component/proper.png">
+                                                <div class="article">
+                                                    <p>PROPER AWARDS</p>
+                                                    <p class="years">PERINGKAT HIJAU 2016</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </p>
+                                    
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container-fluid">
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="left-point">
+              <h3>© 2017 PT Amman Mineral Nusa Tenggara</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+            <div class="right-point">
+              <div class="social">
+                <ul>
+                  <li>
+                    <a href="#!">
+                      <span class="fa-stack fa-sm">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <i class="fa fa-facebook fa-stack-1x fa-icon"></i>
+                      </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#!">
+                      <span class="fa-stack fa-sm">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <i class="fa fa-instagram fa-stack-1x fa-icon"></i>
+                      </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#!">
+                      <span class="fa-stack fa-sm">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <i class="fa fa-twitter fa-stack-1x fa-icon"></i>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="text">
+                <ul>
+                  <li><a href="#!">Career</a></li>
+                  <li><a href="#!">Contact Us</a></li>
+                  <li><a href="#!">Privacy Policy</a></li>
+                  <li><a href="#!">Term of Use</a></li>
+                  <li><a href="#!">Sitemap</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i> <span class="close-popup">&nbsp CLOSE</span></button>
+                        <a href="#" class="navbar-brands">
+                            <img src="/assets/storages/image/brand/logo-second.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="container padd-mobile">
+                        <div class="col-menu">
+                            <div class="col-md-12 padd-mobile">
+                                <div class="col-md-4">
+                                    <div class="content-menu no-border">
+                                        <h2>HOME</h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="content-menu">
+                                        <div class="col-border-story">
+                                          <a href="about"><h2>OUR STORY</h2></a>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a href="about">ABOUT US</a>
+                                            </li>
+                                            <li>
+                                                <a href="##">LEADERSHIP</a>
+                                            </li>
+                                            <li>
+                                                <a href="##">VALUES</a>
+                                            </li>
+                                            <li>
+                                                <a href="##">BUSINESS DIRECTION</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="content-menu">
+                                        <div class="col-border-operation">
+                                          <a href="our-operation"><h2>OUR OPERATIONS</h2></a>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a href="our-operation">OVERVIEW</a>
+                                            </li>
+                                            <li>
+                                                <a href="our-operation#second">PRODUCTION</a>
+                                            </li>
+                                            <li>
+                                                <a href="our-operation#fourth">REFINERY</a>
+                                            </li>
+                                            <li>
+                                                <a href="our-operation#third">TRANSPORTATION</a>
+                                            </li>
+                                            <li>
+                                                <a href="our-operation#fifth">EXPANSION</a>
+                                            </li>
+                                            <li>
+                                                <a href="our-operation#sixth">SUSTAINABLE ENVIRONMENTAL PRACTICE</a>
+                                            </li>
+                                            <li>
+                                                <a href="##">HEALTH AND SAFETY</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4">
+                                  <div class="content-menu">
+                                        <div class="col-border-people">
+                                          <a href="our-people"><h2>OUR PEOPLE</h2></a>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a href="##">WORKING AT PT AMNT</a>
+                                            </li>   
+                                            <li>
+                                                <a href="#">CULTURE</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">CAREER</a>
+                                            </li>
+                                            <li>
+                                                <a href="##">PARTNER</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">SOCIAL INITIATIVES</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="content-menu">
+                                        <div class="col-border-media">
+                                          <h2>MEDIA CENTER</h2>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a href="news">NEWS</a>
+                                            </li>
+                                            <li>
+                                                <a href="##">GALLERY</a>
+                                            </li>
+                                            <li>
+                                                <a href="##">DOWNLOAD CENTER</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/assets/scriptings/public/vendor/bootstrap.min.js"></script>
+    <script src="/assets/scriptings/public/vendor/sweet-scroll.js"></script>
+    <script>
+        var sweetScroll = new SweetScroll({
+            horizontalScroll: true
+        }, "#wrapper");
+
+    </script>
+    </form>
+</body>

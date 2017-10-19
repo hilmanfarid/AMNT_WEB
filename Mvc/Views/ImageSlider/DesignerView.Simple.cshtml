@@ -1,0 +1,362 @@
+﻿@using Telerik.Sitefinity.Mvc;
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+
+<style>
+    .btn-file-slider1-image {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-file-slider2-image {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-file-slider3-image {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-file-slider1-image input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+
+    .btn-file-slider2-image input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+
+    .btn-file-slider3-image input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+
+    #img-upload-slider1-image {
+        width: 100%;
+    }
+
+    #img-upload-slider2-image {
+        width: 100%;
+    }
+
+    #img-upload-slider3-image {
+        width: 100%;
+    }
+</style>
+
+<form>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label>Slider 1 Title</label>
+                        <input type="text" id="slider1TextInput" placeholder="Slider 1 Title" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label>Slider 1 Description</label>
+                        <input type="text" id="desc1TextInput" placeholder="Slider 1 Description" class="form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Slider 1 Image</label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <span class="btn btn-default btn-file-slider1-image">
+                            Browse… <input type="file" id="slider1ImageInput">
+                        </span>
+                    </span>
+                    <input type="text" class="form-control" readonly>
+                </div>
+                <img id='img-upload-slider1-image' />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label>Slider 2 Title</label>
+                        <input type="text" id="slider2TextInput" placeholder="Slider 2 Title" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label>Slider 2 Description</label>
+                        <input type="text" id="desc2TextInput" placeholder="Slider 2 Description" class="form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Slider 2 Image</label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <span class="btn btn-default btn-file-slider2-image">
+                            Browse… <input type="file" id="slider2ImageInput">
+                        </span>
+                    </span>
+                    <input type="text" class="form-control" readonly>
+                </div>
+                <img id='img-upload-slider2-image' />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label>Slider 3 Title</label>
+                        <input type="text" id="slider3TextInput" placeholder="Slider 3 Title" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label>Slider 3 Description</label>
+                        <input type="text" id="desc3TextInput" placeholder="Slider 3 Description" class="form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Slider 3 Image</label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <span class="btn btn-default btn-file-slider3-image">
+                            Browse… <input type="file" id="slider3ImageInput">
+                        </span>
+                    </span>
+                    <input type="text" class="form-control" readonly>
+                </div>
+                <img id='img-upload-slider3-image' />
+            </div>
+        </div>
+    </div>
+
+    <script type="text/ng-template" section="modal-footer">
+        <input type="button" class="btn btn-primary" onclick="save()" value="Save">
+        <a class="btn btn-link" id="cancel" data-dismiss="modal" ng-click="cancel()">Cancel</a>
+    </script>
+
+    <script type="text/javascript">
+        
+        function save() {
+            var slider1_image = $("#slider1ImageInput").get(0);
+            var slider1_image_files = slider1_image.files;
+            
+            var slider2_image = $("#slider2ImageInput").get(0);
+            var slider2_image_files = slider2_image.files;
+
+            var slider3_image = $("#slider3ImageInput").get(0);
+            var slider3_image_files = slider3_image.files;
+
+            var fileData = new FormData();
+
+            // Looping over all files and add it to FormData object  
+            for (var i = 0; i < slider1_image_files.length; i++) {
+                fileData.append("slider1_image", slider1_image_files[i]);
+            }
+
+            for (var i = 0; i < slider2_image_files.length; i++) {
+                fileData.append("slider2_image", slider2_image_files[i]);
+            }
+
+            for (var i = 0; i < slider3_image_files.length; i++) {
+                fileData.append("slider3_image", slider3_image_files[i]);
+            }
+
+            fileData.append("slider1_text", $("#slider1TextInput").val());
+            fileData.append("slider1_desc", $("#desc1TextInput").val());
+            
+            fileData.append("slider2_text", $("#slider2TextInput").val());
+            fileData.append("slider2_desc", $("#desc2TextInput").val());
+
+            fileData.append("slider3_text", $("#slider3TextInput").val());
+            fileData.append("slider3_desc", $("#desc3TextInput").val());
+
+            $.ajax({
+                type: 'POST',
+                url: "@System.Configuration.ConfigurationManager.AppSettings["ApiUrl"]" + "imageslider/setimageslider",
+                data: fileData,
+                contentType: false, // Not to set any content header  
+                processData: false, // Not to process data  
+                async: false,
+                success: function (result) {
+                    console.log(result);
+                }
+            });
+
+            $('#cancel').click();
+        }
+
+        $(document).ready(function () {
+            $("#slider1TextInput").val(slider1_text);
+            $("#desc1TextInput").val(slider1_desc);
+            $("#slider2TextInput").val(slider2_text);
+            $("#desc2TextInput").val(slider2_desc);
+            $("#slider3TextInput").val(slider3_text);
+            $("#desc3TextInput").val(slider3_desc);
+
+            $('#img-upload-slider1-image').attr('src', "@System.Configuration.ConfigurationManager.AppSettings["ApiUrl"]" + slider1_image);
+            $('#img-upload-slider2-image').attr('src', "@System.Configuration.ConfigurationManager.AppSettings["ApiUrl"]" + slider2_image);
+            $('#img-upload-slider3-image').attr('src', "@System.Configuration.ConfigurationManager.AppSettings["ApiUrl"]" + slider3_image);
+
+            $(document).on('change', '.btn-file-slider1-image :file', function () {
+                var input = $(this),
+                    label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+                input.trigger('fileselect', [label]);
+            });
+
+            $(document).on('change', '.btn-file-slider2-image :file', function () {
+                var input = $(this),
+                    label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+                input.trigger('fileselect', [label]);
+            });
+
+            $(document).on('change', '.btn-file-slider3-image :file', function () {
+                var input = $(this),
+                    label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+                input.trigger('fileselect', [label]);
+            });
+
+            $('.btn-file-slider1-image :file').on('fileselect', function (event, label) {
+
+                var input = $(this).parents('.input-group').find(':text'),
+                    log = label;
+
+                if (input.length) {
+                    input.val(log);
+                } else {
+                    if (log) alert(log);
+                }
+
+            });
+
+            $('.btn-file-slider2-image :file').on('fileselect', function (event, label) {
+
+                var input = $(this).parents('.input-group').find(':text'),
+                    log = label;
+
+                if (input.length) {
+                    input.val(log);
+                } else {
+                    if (log) alert(log);
+                }
+
+            });
+
+            $('.btn-file-slider3-image :file').on('fileselect', function (event, label) {
+
+                var input = $(this).parents('.input-group').find(':text'),
+                    log = label;
+
+                if (input.length) {
+                    input.val(log);
+                } else {
+                    if (log) alert(log);
+                }
+
+            });
+
+            function readURLSlider1(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('#img-upload-slider1-image').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+
+            function readURLSlider2(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('#img-upload-slider2-image').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+
+            function readURLSlider3(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('#img-upload-slider3-image').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+
+            $("#slider1ImageInput").change(function () {
+                readURLSlider1(this);
+            });
+
+            $("#slider2ImageInput").change(function () {
+                readURLSlider2(this);
+            });
+
+            $("#slider3ImageInput").change(function () {
+                readURLSlider3(this);
+            });
+        });
+    </script>
+</form>
+

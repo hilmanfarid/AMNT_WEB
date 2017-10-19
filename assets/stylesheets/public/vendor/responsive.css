@@ -1,0 +1,445 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width:320px) and (max-device-width:480px) {
+    .navbar-default .navbar-collapse ul li span,
+    .owl-nav {
+        display: none
+    }
+    .templatemo-top-bar .sosmed ul li {
+        margin: 0 5px
+    }
+    .templatemo-top-bar .sosmed ul {
+        margin-top: 10px
+    }
+    .templatemo-top-bar .sosmed ul li:nth-child(5) a i {
+        font-size: 15px;
+        margin-top: 3px
+    }
+    .navbar-default .navbar-collapse .btn-popup {
+        padding-left: 7px
+    }
+    .carousel-caption {
+        left: 0;
+        right: 0
+    }
+    .carousel-caption .col-border {
+        width: 51.5%
+    }
+    .center {
+        width: 90%;
+        margin: 0 auto
+    }
+    .slider__dots {
+        width: 100%;
+        bottom: 2.5em
+    }
+    .slider__dot,
+    .slider__indicator {
+        height: 2em;
+        margin: 0 2px
+    }
+    .slider__dot p {
+        text-shadow: none;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 25px!important;
+        padding: 0 2px
+    }
+    .slider[data-pos="0"] .slider__indicator {
+        width: 2.8em
+    }
+    .slider[data-pos="1"] .slider__indicator {
+        width: 3.3em;
+        left: 2.99em
+    }
+    .slider[data-pos="2"] .slider__indicator {
+        left: 6.4em;
+        right: 9.5em
+    }
+    .slider[data-pos="3"] .slider__indicator {
+        left: 13.7em;
+        width: 3em
+    }
+    .slider[data-pos="4"] .slider__indicator {
+        left: 16.8em;
+        width: 2.9em
+    }
+    .slider[data-pos="5"] .slider__indicator {
+        left: 20em
+    }
+    .line-header .col-border {
+        width: 65.5%
+    }
+    .owl-dots {
+        padding-top: 15px
+    }
+    .row_team .card {
+        margin-left: 34px
+    }
+    .tag-name h2 {
+        right: 45%
+    }
+    #shareholders .line-header {
+        margin-top: 0
+    }
+    #shareholders .line-header .col-border {
+        width: 79.5%
+    }
+    #shareholders .line-header h2 {
+        font-size: 4em
+    }
+    #shareholders .row-shareholders .desc-shareholder {
+        padding-top: 0
+    }
+    #shareholders .col-grafik .text-persen .range h2 {
+        font-size: 2em
+    }
+    #shareholders .col-grafik .text-persen .range p {
+        font-size: 9px
+    }
+    #shareholders .col-grafik .text-persen .pull-left {
+        bottom: -12px;
+        left: 16%
+    }
+    #values .line-header .col-border {
+        width: 41%
+    }
+    #values .line-header h2 {
+        font-size: 4em
+    }
+    #values .col-mission {
+        padding-left: 30px;
+        padding-top: 0
+    }
+    #values .col-mission h2 {
+        font-size: 2.5em
+    }
+    #values .col-mission p {
+        line-height: 20px
+    }
+    #values .no-padding img {
+        margin-bottom: 10px
+    }
+    #bisnis-direction .line-header .col-border {
+        width: 86.6%
+    }
+    #bisnis-direction .line-header h2 {
+        font-size: 3em
+    }
+    .modal-content {
+        height: auto
+    }
+    .modal-dialog {
+        margin-left: 0;
+        margin-top: 0
+    }
+    .modal-open .modal {
+        z-index: 9999
+    }
+
+    /** Page Home **/
+    body section.news .container-fluid .left-point {
+      padding: 20px 10px;
+    }
+    body section.news .container-fluid .left-point h1 {
+      font-size: 40px;
+    }
+    body section.news .container-fluid .left-point h3 {
+      margin-top: 20px;
+    }
+    body section.news .container-fluid .card {
+      height: 26rem;
+    }
+    body section.news .container-fluid .card .card__thumb {
+      height: 17rem;
+    }
+    body section.big-images .container-fluid .left-point {
+      padding: 20px 10px;
+    }
+    body section.big-images .container-fluid .left-point h1 {
+      font-size: 40px;
+    }
+    body section.connect .container .slideInUp {
+      padding: 2px 0px;
+    }
+    body section.connect .container .slideInUp img {
+      width: 100%;
+    }
+    .navbar-header a.navbar-brand {
+      padding: 0;
+      margin: 5px 0 0;
+    }
+    nav [data-element=main-navigation] {
+      height: 54px;
+    }
+    .col-menu-mobile {
+      padding: 0px;
+    }
+    .col-menu-mobile .navbar-header {
+      padding: 13px;
+    }
+    nav [data-element=main-navigation] ul {
+      left: 0px;
+    }
+    .container-top {
+      padding: 4px 15px;
+    }
+    nav [data-element=top-navigation] .right-point ul li.social-icon {
+      margin: 0 2.5px;
+    }
+
+    /** Page Operation **/
+    body.operation .section .img-operation {
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+    #wrapper .section .title-text h1 {
+        font-size: 2em;
+        margin: -1.6em 0;
+    }
+    #wrapper .section .title-text {
+        width: 64%;
+    }
+    #wrapper .section h2.section__title {
+        margin-top: 0px;
+        font-size: 2.4em;
+        margin-bottom: 10px;
+    }
+    #wrapper .section p {
+        padding-right: 0px;
+        font-size: 16px;
+    }
+    section.section-awards .col-img-awards {
+      overflow: hidden;
+      padding: 0px;
+    }
+    section.section-awards .col-img-awards .col-xs-6{
+      padding: 5px;
+    }
+    section.section-awards .padding-mobile {
+      padding: 0px;
+    }
+    section.section-awards .col-img-awards .col-img:nth-child(2) {
+      margin-top: 10px;
+    }
+    section.section-awards .title-awards {
+      overflow: hidden;
+      width: 100%;
+      margin-top: 80px;
+    }
+    section.section-awards .title-awards .pull-right button {
+      margin-top: 10px;
+    }
+    .padd-mobile {
+      padding: 0px;
+    }
+
+}
+
+@media only screen and (min-width:321px) {
+    .navbar-default .navbar-collapse ul li:nth-child(5) a {
+        padding-left: 8px
+    }
+}
+
+@media only screen and (max-width:320px) {
+    #shareholders .line-header h2,
+    .carousel-caption h1,
+    .line-header h2 {
+        font-size: 3em
+    }
+    .navbar-default .navbar-collapse ul li span {
+        display: none
+    }
+    .navbar-default .navbar-collapse ul li:nth-child(5) a {
+        padding-left: 8px
+    }
+    .carousel-caption .col-border {
+        width: 44.5%
+    }
+    .templatemo-team .line-header .col-border {
+        width: 54.5%
+    }
+    #shareholders .line-header .col-border {
+        width: 70.5%
+    }
+    #shareholders .row-shareholders p {
+        font-size: 15px
+    }
+    #values .line-header .col-border {
+        width: 34%
+    }
+    #values .line-header h2 {
+        font-size: 3em
+    }
+    #bisnis-direction .line-header .col-border {
+        width: 84.6%
+    }
+    #bisnis-direction .line-header h2 {
+        font-size: 2.5em
+    }
+    .slider[data-pos="0"] .slider__indicator {
+        width: 2.6em
+    }
+    .slider[data-pos="1"] .slider__indicator {
+        width: 2.8em;
+        left: 2.8em
+    }
+    .slider[data-pos="2"] .slider__indicator {
+        left: 5.8em;
+        right: 8.8em
+    }
+    .slider[data-pos="3"] .slider__indicator {
+        left: 11.7em;
+        right: 10em;
+        width: 2.9em
+    }
+    .slider[data-pos="4"] .slider__indicator {
+        left: 14.8em;
+        right: 7em;
+        width: 2.7em
+    }
+    .slider[data-pos="5"] .slider__indicator {
+        left: 17.5em
+    }
+    .modal-content {
+        height: auto
+    }
+    .modal-dialog {
+        margin-left: 0
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
+    #wrapper .section .title-text {
+        width: 57%;
+    }
+    #wrapper .section .title-text h1 {
+        font-size: 2.2em;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) {
+/* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) {
+  .carousel-caption .col-border {
+    width: 44.5%;
+  }
+
+  /* ------ Section Team ----- */
+  .line-header .col-border {
+    width: 57.5%;
+  }
+
+  /* ------ Section Shareholders ----- */
+  #shareholders .line-header .col-border {
+    width: 69.5%;
+  }
+  #shareholders .col-grafik .text-persen .range h2 {
+    font-size: 2.5em;
+  }
+  #shareholders .col-grafik .text-persen .range p {
+    font-size: 11px;
+  }
+
+  /* ------ Section Values ----- */
+  #values .line-header .col-border {
+    width: 35%;
+  }
+
+  /* ------ Section Direction ----- */
+  #bisnis-direction .line-header .col-border {
+    width: 75.6%;
+  }
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
+    #wrapper .section .title-text {
+        width: 59%;
+    }
+    #wrapper .section .title-text h1 {
+        font-size: 2.2em;
+    }
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}

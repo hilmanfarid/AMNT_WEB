@@ -1,0 +1,37 @@
+@model SitefinityWebApp.Mvc.Models.BigImagesModel
+
+<section class="big-images big-img-home" id="sectionBigImage">
+    <div class="container-fluid">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-grid="clear">
+            <div class="left-point">
+                <h1 id="title" class="wow slideInUp"></h1>
+                <p id="desc" class="wow slideInUp"></p>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    var titleBigImage = "WORK WITH COMMUNITIES";
+    var descBigImage = "Imagine what will happen if everyone participates in giving back to the society";
+    var pictureBigImage = "Uploads/bg-img.jpg";
+
+    setHeader();
+
+    function setHeader() {
+        $.ajax({
+            type: 'GET',
+            url: "@System.Configuration.ConfigurationManager.AppSettings["ApiUrl"]" + "bigimages/getbigimages",
+            async: false,
+            success: function (result) {
+                titleBigImage = result[0].content;
+                descBigImage = result[1].content;
+                pictureBigImage = result[2].content;
+
+                $("#title").html(titleBigImage);
+                $("#desc").html(descBigImage);
+                $("#sectionBigImage").attr('style', "background: url('@System.Configuration.ConfigurationManager.AppSettings["ApiUrl"]" + pictureBigImage +"') no-repeat; background-size: cover; height: auto");
+            }
+        });
+    }
+
+</script>

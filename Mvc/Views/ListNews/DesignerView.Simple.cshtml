@@ -1,0 +1,131 @@
+﻿@using Telerik.Sitefinity.Mvc;
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+
+<style>
+    .btn-file-slider1-image {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-file-slider2-image {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-file-slider3-image {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-file-slider1-image input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+
+    .btn-file-slider2-image input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+
+    .btn-file-slider3-image input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+
+    #img-upload-slider1-image {
+        width: 100%;
+    }
+
+    #img-upload-slider2-image {
+        width: 100%;
+    }
+
+    #img-upload-slider3-image {
+        width: 100%;
+    }
+</style>
+
+<form>
+    <div class="row" id="showTable">
+        <div class="col-sm-12">
+            <input type="button" class="btn btn-primary" onclick="addList()" value="Add List">
+            <br />
+            <table id="table"></table>
+        </div>
+    </div>
+    <div id="showInput" style="display: none;">
+        <input type="button" class="btn btn-primary" onclick="showTable()" value="Back">
+    </div>
+    <script type="text/ng-template" section="modal-footer">
+        <input type="button" class="btn btn-primary" onclick="save()" value="Save">
+        <a class="btn btn-link" id="cancel" data-dismiss="modal" ng-click="cancel()">Cancel</a>
+    </script>
+
+    <script type="text/javascript">
+        setTable();
+
+        function setTable() {
+            var table = "";
+            table += "<tr>";
+            table += "<th>No</th>";
+            table += "<th>Title</th>";
+            table += "<th>Tag Name</th>";
+            table += "<th>Action</th>";
+            table += "<tr>";
+            for (var i = 0; i < dataNews.length; i++) {
+                table += "<tr>";
+                table += "<td>" + (i+1) + "</td>";
+                table += "<td>" + dataNews[i].title + "</td>";
+                table += "<td>" + dataNews[i].name_tag + "</td>";
+                table += "<td>" + "<i class='fa fa-edit'></i>;&nbsp;&nbsp;&nbsp;&nbsp<i class='fa fa-trash'></i>" + "</td>";
+                table += "<tr>";
+            }
+
+            $("#table").html(table);
+        }
+
+        function addList() {
+            $("#showTable").hide();
+            $("#showInput").show();
+        }
+        
+        function showTable() {
+            $("#showTable").show();
+            $("#showInput").hide();
+        }
+    </script>
+</form>
+

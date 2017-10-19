@@ -1,0 +1,181 @@
+body header {
+  margin-top: 0px;
+}
+.header-image {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: url(../../../storages/image/component/sliderprofil.png) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.headline {
+  padding: 120px 0;
+  color: #fff;
+}
+
+.headline .title-top{
+  width: 38%;
+  margin: 0 auto;
+  margin-top: 15.5%;
+}
+.headline .title-top h1{
+  font-size: 5em;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #fff;
+}
+
+.headline .desc-top {
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.headline .desc-top p {
+  font-size: 18px;
+  font-family: "Istok Web",sans-serif;
+}
+
+#section-culture {
+  overflow: hidden;
+}
+#section-culture .col-md-12{
+  padding: 0px;
+}
+#section-culture .col-desc-culture {
+  padding: 90px 55px;
+}
+#section-culture .col-desc-culture h2{
+  color: #8c4023;
+  font-size: 4em;
+}
+#section-culture .col-desc-culture p{
+  font-family: "Istok Web",sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+}
+#section-culture .slide-inner .slide-content{
+  top: 10%;
+}
+#section-culture .slide-inner .slide-content h1.slide-content-text {
+  font-size: 4rem;
+  text-align: left;
+  letter-spacing: 0px;
+  width: 40%;
+  font-family: "Istok Web",sans-serif;
+}
+
+#section-career {
+  background-color: #FFBE05;
+  text-align: center;
+  overflow: hidden;
+  padding: 35px 0px;
+}
+#section-career .col-career .border-people{
+  margin: 0 auto;
+  width: 8.7%;
+}
+#section-career .col-career h2{
+  color: #8c4023;
+  font-size: 4em;
+  border-bottom: 3px solid;
+}
+#section-career .col-career p{
+  font-family: "Istok Web",sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+  padding: 15px 0px 30px 0px;
+}
+#section-career .col-career .more-career {
+  margin-bottom: 25px;
+}
+#section-career .col-career .more-career a{
+  color: #8c4023;
+  font-weight: 600;
+  font-family: "Istok Web",sans-serif;
+  font-size: 22px;
+  border: 4px solid;
+  padding: 0px 10px;
+}
+
+.big-images .action a {
+  color: #8c4023;
+  font-weight: 600;
+  font-family: "Istok Web",sans-serif;
+  font-size: 22px;
+  border: 4px solid;
+  padding: 0px 10px;
+}
+.big-images .border-partner {
+  width: 23%;
+}
+.big-images .border-partner h1 {
+  border-bottom: 3px solid;
+  font-size: 4em !important;
+}
+
+#social-invitation {
+  overflow: hidden;
+  background: #f1f1f1;
+  text-align: center;
+  padding-bottom: 100px;
+}
+#social-invitation .col-social .desc-social h2{
+  font-size: 4em;
+  color: #8c4023;
+  border-bottom: 3px solid;
+
+}
+#social-invitation .col-social .padding-custome{
+  padding-right: 5px;
+  padding-left: 5px;
+}
+#social-invitation .col-social .desc-social .col-border{
+  width: 22%;
+  margin: 0 auto;
+}
+#social-invitation .col-social .desc-social p{
+  font-family: "Istok Web",sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+#social-invitation .col-social .desc-social .col-desc-wrapper{
+  width: 40.5%;
+  margin: 0 auto;
+}
+#social-invitation .col-social article{
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 97%;
+}
+#social-invitation .col-social .col-more{
+  vertical-align: bottom;
+  bottom: 7px;
+  position: absolute;
+  text-align: right;
+  width: 100%;
+}
+#social-invitation .col-social .col-more a{
+  color: #fff;
+  text-decoration: underline;
+}
+#social-invitation .col-social article h2{
+  color: #ffffff;
+  font-size: 27px;
+  text-align: left;
+}
+#social-invitation .col-social article .line-more{
+  float: right;
+  height: 2px;
+  background: #fff;
+  width: 60px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+footer {
+  margin-top: 0px;
+}

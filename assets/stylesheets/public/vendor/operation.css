@@ -1,0 +1,123 @@
+body.operation footer {
+  margin-top: 0px;
+}
+h1 {
+  color: #8c4023;
+  margin: 0.4em 0;
+  font-size: 4.6em;
+  letter-spacing: 3px;
+}
+#wrapper {
+  position: inherit;
+  background: url('../../../storages/image/component/bg.png') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-x: hidden;
+  margin-bottom:0;
+}
+#wrapper > div {
+  width: 1100vw;
+}
+.section {
+  float: left;
+  width: 9%;
+}
+.section img {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.section article{
+  position: relative;
+}
+.image-caption {
+  position: absolute;
+}
+#wrapper .section .title-text {
+  width: 29%;
+  margin: 0 auto;
+}
+#wrapper .section .title-text h1 {
+  letter-spacing: 3px;
+  border-bottom: 3px solid;
+}
+#wrapper .section h2.section__title{
+  font-family: BigNoodle;
+  font-size: 4.4em;
+  color: #000;
+  margin-top: 65px;
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+}
+#wrapper .section p {
+  font-size: 17px;
+  color: #000;
+  padding-right: 94px;
+}
+.btn--ghost {
+  color: #fbcd15;
+  font-size: 16px;
+  background: transparent;
+  padding: 0px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.list--inline {
+  margin-top: 45px;
+}
+.btn--ghost:hover {
+  color: #fbcd15;
+  text-decoration: underline;
+}
+
+section.section-awards .article p{
+  padding: 0px !important;
+  font-size: 22px !important;
+  font-family: BigNoodle;
+  letter-spacing: 1px;
+  margin-bottom: -7px;
+}
+section.section-awards .article p.years{
+  color: #fbcd15 !important;
+}
+section.section-awards .title-awards .pull-right button{
+  margin-top: 85px;
+  color: #8c4023!important;
+  text-decoration: none;
+}
+section.section-awards .col-img-awards .col-img img {
+  padding-bottom: 20px;
+}
+section.section-awards .col-img-awards .col-img:nth-child(2) {
+  margin-top: 55px;
+}
+section.section-awards .col-img-awards .col-img:nth-child(3) {
+  margin-top: 57px;
+}
+section.section-awards .col-img-awards .col-img:nth-child(4) {
+  margin-top: 25px;
+}
+
+.img-operation p {
+  color: #8c4023 !important;
+  padding: 0px !important;
+  text-align: center !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+}
+.img-operation .desc:nth-child(2) {
+  position: relative;
+  bottom: -62px;
+}
+img.img-people {
+  position: absolute;
+  height: 482px;
+  right: 100px;
+}
+.img-absolute p {
+  position: relative;
+  bottom: -472px;
+  color: #fff !important;
+  right: -25px;
+}

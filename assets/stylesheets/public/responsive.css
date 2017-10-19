@@ -1,0 +1,296 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .navbar-default .navbar-collapse ul li span {
+    display: none;
+  }
+  .templatemo-top-bar .sosmed ul li {
+    margin: 0 5px;
+  }
+  .carousel-caption {
+    left: 0px;
+    right: 0px;
+  }
+  .carousel-caption .col-border {
+    width: 51.5%;
+  }
+  .center {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .slider__dots {
+    width: 100%;
+    bottom: 5.5em;
+  }
+
+  /* ------ Section Team ----- */
+  .line-header .col-border {
+    width: 65.5%;
+  }
+  .owl-nav {
+    display: none;
+  }
+  .owl-dots {
+    padding-top: 15px;
+  }
+  .row_team .card {
+    margin-left: 34px;
+  }
+  .tag-name h2 {
+    right: 45%;
+  }
+
+  /* ------ Section Shareholders ----- */
+  #shareholders .line-header {
+    margin-top: 0px;
+  }
+  #shareholders .line-header .col-border {
+    width: 79.5%;
+  }
+  #shareholders .line-header h2 {
+    font-size: 4em;
+  }
+  #shareholders .row-shareholders .desc-shareholder {
+    padding-top: 0px;
+  }
+  #shareholders .col-grafik .text-persen .range h2 {
+    font-size: 2em;
+  }
+  #shareholders .col-grafik .text-persen .range p {
+    font-size: 9px;
+  }
+  #shareholders .col-grafik .text-persen .pull-left {
+    bottom: -12px;
+    left: 16%;
+  }
+
+  /* ------ Section Values ----- */
+  #values .line-header .col-border {
+    width: 41%;
+  }
+  #values .line-header h2 {
+    font-size: 4em;
+  }
+  #values .col-mission {
+    padding-left: 30px;
+    padding-top: 0px;
+  }
+  #values .col-mission h2 {
+    font-size: 2.5em;
+  }
+  #values .col-mission p {
+    line-height: 20px;
+  }
+  #values .no-padding img {
+    margin-bottom: 10px;
+  }
+
+  /* ------ Section Direction ----- */
+  #bisnis-direction .line-header .col-border {
+    width: 86.6%;
+  }
+  #bisnis-direction .line-header h2 {
+    font-size: 3em;
+  }
+
+  /* ------ Section Modal Popup ----- */
+  .modal-content {
+    height: auto;
+  }
+  .modal-dialog {
+    margin-left: 0px;
+  }
+  .modal-open .modal {
+    z-index: 9999;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+  .navbar-default .navbar-collapse ul li:nth-child(5) a {
+    padding-left: 8px;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+  .navbar-default .navbar-collapse ul li span {
+    display: none;
+  }
+  .navbar-default .navbar-collapse ul li:nth-child(5) a {
+    padding-left: 8px;
+  }
+  .carousel-caption h1 {
+    font-size: 3em;
+  }
+  .carousel-caption .col-border {
+    width: 44.5%;
+  }
+
+  /* ------ Section Team ----- */
+  .line-header h2 {
+    font-size: 3em;
+  }
+  .templatemo-team .line-header .col-border {
+    width: 54.5%;
+  }
+
+  /* ------ Section Shareholders ----- */
+  #shareholders .line-header .col-border {
+    width: 70.5%;
+  }
+  #shareholders .line-header h2 {
+    font-size: 3em;
+  }
+  #shareholders .row-shareholders p {
+    font-size: 15px;
+  }
+
+  /* ------ Section Values ----- */
+  #values .line-header .col-border {
+    width: 34%;
+  }
+  #values .line-header h2 {
+    font-size: 3em;
+  }
+  
+  /* ------ Section Direction ----- */
+  #bisnis-direction .line-header .col-border {
+    width: 84.6%;
+  }
+  #bisnis-direction .line-header h2 {
+    font-size: 2.5em;
+  }
+
+  /* ------ Section Modal Popup ----- */
+  .modal-content {
+    height: auto;
+  }
+  .modal-dialog {
+    margin-left: 0px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) {
+/* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) {
+  .carousel-caption .col-border {
+    width: 44.5%;
+  }
+
+  /* ------ Section Team ----- */
+  .line-header .col-border {
+    width: 57.5%;
+  }
+
+  /* ------ Section Shareholders ----- */
+  #shareholders .line-header .col-border {
+    width: 69.5%;
+  }
+  #shareholders .col-grafik .text-persen .range h2 {
+    font-size: 2.5em;
+  }
+  #shareholders .col-grafik .text-persen .range p {
+    font-size: 11px;
+  }
+
+  /* ------ Section Values ----- */
+  #values .line-header .col-border {
+    width: 35%;
+  }
+
+  /* ------ Section Direction ----- */
+  #bisnis-direction .line-header .col-border {
+    width: 75.6%;
+  }
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}

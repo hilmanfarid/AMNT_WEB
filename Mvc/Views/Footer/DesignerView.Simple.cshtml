@@ -1,0 +1,40 @@
+﻿@using Telerik.Sitefinity.Mvc;
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+
+<form>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="form-group">
+                <label>Copy Right</label>
+                <input type="text" id="copyright" placeholder="Copyright" class="form-control" />
+            </div>
+        </div>
+    </div>
+
+    <script type="text/ng-template" section="modal-footer">
+        <input type="button" class="btn btn-primary" onclick="save()" value="Save">
+        <a class="btn btn-link" id="cancel" data-dismiss="modal" ng-click="cancel()">Cancel</a>
+    </script>
+
+    <script type="text/javascript">
+        
+        function save() {
+            $.ajax({
+                type: 'POST',
+                url: "@System.Configuration.ConfigurationManager.AppSettings["ApiUrl"]" + "footer/setfooter",
+                data: { "copyright": $("#copyright").val() },
+                async: false,
+                success: function (result) {
+                    console.log(result);
+                }
+            });
+
+            $('#cancel').click();
+        }
+
+        $(document).ready(function () {
+            $("#copyright").val(copyright);
+        });
+    </script>
+</form>
+

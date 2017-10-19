@@ -1,0 +1,411 @@
+﻿@using Telerik.Sitefinity.Mvc;
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+
+<style>
+    .btn-file-facebook {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-file-twitter {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-file-instagram {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-file-linkedin {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-file-facebook input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+
+    .btn-file-linkedin input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+
+    .btn-file-twitter input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+
+    .btn-file-instagram input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+
+    #img-upload-facebbok {
+        width: 100%;
+    }
+
+    #img-upload-instagram {
+        width: 100%;
+    }
+
+    #img-upload-twitter {
+        width: 100%;
+    }
+
+    #img-upload-linkedin {
+        width: 100%;
+    }
+</style>
+
+<form>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Facebook Image</label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <span class="btn btn-default btn-file-facebook">
+                            Browse… <input type="file" id="facebookImageInput">
+                        </span>
+                    </span>
+                    <input type="text" class="form-control" readonly>
+                </div>
+                <img id='img-upload-facebook' />
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Twitter Image</label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <span class="btn btn-default btn-file-twitter">
+                            Browse… <input type="file" id="twitterImageInput">
+                        </span>
+                    </span>
+                    <input type="text" class="form-control" readonly>
+                </div>
+                <img id='img-upload-twitter' />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Facebook Text</label>
+                <input type="text" id="facebookTextInput" placeholder="Connect Whit Us By Facebook" class="form-control" />
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Twitter Text</label>
+                <input type="text" id="twitterTextInput" placeholder="Connect Whit Us By Twitter" class="form-control" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Instagram Image</label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <span class="btn btn-default btn-file-instagram">
+                            Browse… <input type="file" id="instagramImageInput">
+                        </span>
+                    </span>
+                    <input type="text" class="form-control" readonly>
+                </div>
+                <img id='img-upload-instagram'/>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Linkedin Image</label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <span class="btn btn-default btn-file-linkedin">
+                            Browse… <input type="file" id="linkedinImageInput">
+                        </span>
+                    </span>
+                    <input type="text" class="form-control" readonly>
+                </div>
+                <img id='img-upload-linkedin' />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Instagram Text</label>
+                <input type="text" id="instagramTextInput" placeholder="Connect Whit Us By Instagram" class="form-control" />
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Linkedin Text</label>
+                <input type="text" id="linkedinTextInput" placeholder="Connect Whit Us By Linkedin" class="form-control" />
+            </div>
+        </div>
+    </div>
+
+    <script type="text/ng-template" section="modal-footer">
+        <input type="button" class="btn btn-primary" onclick="save()" value="Save">
+        <a class="btn btn-link" id="cancel" data-dismiss="modal" ng-click="cancel()">Cancel</a>
+    </script>
+
+    <script type="text/javascript">
+        
+        function save() {
+            var fileUploadFacebook = $("#facebookImageInput").get(0);
+            var filesFacebook = fileUploadFacebook.files;
+            
+            var fileUploadTwitter = $("#twitterImageInput").get(0);
+            var filesTwitter = fileUploadTwitter.files;
+
+            var fileUploadInstagram = $("#instagramImageInput").get(0);
+            var filesInstagram = fileUploadInstagram.files;
+
+            var fileUploadLinkedin = $("#linkedinImageInput").get(0);
+            var filesLinkedin = fileUploadLinkedin.files;
+
+            var fileData = new FormData();
+
+            // Looping over all files and add it to FormData object  
+            for (var i = 0; i < filesFacebook.length; i++) {
+                fileData.append("facebbokImage", filesFacebook[i]);
+            }
+
+            for (var i = 0; i < filesInstagram.length; i++) {
+                fileData.append("instagramImage", filesInstagram[i]);
+            }
+
+            for (var i = 0; i < filesLinkedin.length; i++) {
+                fileData.append("linkeindImage", filesLinkedin[i]);
+            }
+
+            for (var i = 0; i < filesTwitter.length; i++) {
+                fileData.append("twitterImage", filesTwitter[i]);
+            }
+
+            fileData.append("facebookText", $("#facebookTextInput").val());
+            fileData.append("instagramText", $("#instagramTextInput").val());
+            fileData.append("linkedinText", $("#linkedinTextInput").val());
+            fileData.append("twitterText", $("#twitterTextInput").val());
+
+            $.ajax({
+                type: 'POST',
+                url: "@System.Configuration.ConfigurationManager.AppSettings["ApiUrl"]" + "connectwhitus/setconnectwhitus",
+                data: fileData,
+                contentType: false, // Not to set any content header  
+                processData: false, // Not to process data  
+                async: false,
+                success: function (result) {
+                    console.log(result);
+                }
+            });
+
+            $('#cancel').click();
+        }
+
+        $(document).ready(function () {
+            $("#facebookTextInput").val(facebookText);
+            $("#instagramTextInput").val(instagramText);
+            $("#twitterTextInput").val(twitterText);
+            $("#linkedinTextInput").val(linkedinText);
+
+            $('#img-upload-facebook').attr('src', "@System.Configuration.ConfigurationManager.AppSettings["ApiUrl"]" + facebookImage);
+            $('#img-upload-twitter').attr('src', "@System.Configuration.ConfigurationManager.AppSettings["ApiUrl"]" + twitterImage);
+            $('#img-upload-instagram').attr('src', "@System.Configuration.ConfigurationManager.AppSettings["ApiUrl"]" + instagramImage);
+            $('#img-upload-linkedin').attr('src', "@System.Configuration.ConfigurationManager.AppSettings["ApiUrl"]" + linkedinImage);
+
+            $(document).on('change', '.btn-file-facebook :file', function () {
+                var input = $(this),
+                    label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+                input.trigger('fileselect', [label]);
+            });
+
+            $(document).on('change', '.btn-file-instagram :file', function () {
+                var input = $(this),
+                    label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+                input.trigger('fileselect', [label]);
+            });
+
+            $(document).on('change', '.btn-file-twitter :file', function () {
+                var input = $(this),
+                    label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+                input.trigger('fileselect', [label]);
+            });
+
+            $(document).on('change', '.btn-file-linkedin :file', function () {
+                var input = $(this),
+                    label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+                input.trigger('fileselect', [label]);
+            });
+
+            $('.btn-file-facebook :file').on('fileselect', function (event, label) {
+
+                var input = $(this).parents('.input-group').find(':text'),
+                    log = label;
+
+                if (input.length) {
+                    input.val(log);
+                } else {
+                    if (log) alert(log);
+                }
+
+            });
+
+            $('.btn-file-twitter :file').on('fileselect', function (event, label) {
+
+                var input = $(this).parents('.input-group').find(':text'),
+                    log = label;
+
+                if (input.length) {
+                    input.val(log);
+                } else {
+                    if (log) alert(log);
+                }
+
+            });
+
+            $('.btn-file-instagram :file').on('fileselect', function (event, label) {
+
+                var input = $(this).parents('.input-group').find(':text'),
+                    log = label;
+
+                if (input.length) {
+                    input.val(log);
+                } else {
+                    if (log) alert(log);
+                }
+
+            });
+
+            $('.btn-file-linkedin :file').on('fileselect', function (event, label) {
+
+                var input = $(this).parents('.input-group').find(':text'),
+                    log = label;
+
+                if (input.length) {
+                    input.val(log);
+                } else {
+                    if (log) alert(log);
+                }
+
+            });
+
+            function readURLFacebook(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('#img-upload-facebook').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+
+            function readURLTwitter(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('#img-upload-twitter').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+
+            function readURLInstagram(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('#img-upload-instagram').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+
+            function readURLLinkedin(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('#img-upload-linkedin').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+
+            $("#facebookImageInput").change(function () {
+                readURLFacebook(this);
+            });
+
+            $("#twitterImageInput").change(function () {
+                readURLTwitter(this);
+            });
+
+            $("#instagramImageInput").change(function () {
+                readURLInstagram(this);
+            });
+
+            $("#linkedinImageInput").change(function () {
+                readURLLinkedin(this);
+            });
+        });
+    </script>
+</form>
+

@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/assets/stylesheets/public/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/stylesheets/public/vendor/slider.min.css">
+    <link rel="stylesheet" href="/assets/stylesheets/public/vendor/animate.min.css">
+    <link rel="stylesheet" href="/assets/stylesheets/public/vendor/cards.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/stylesheets/public/global.min.css">
+    <link rel="stylesheet" href="/assets/stylesheets/public/vendor/about.min.css">
+    <link rel="stylesheet" href="/assets/stylesheets/public/index.min.css">
+    <link rel="stylesheet" href="/assets/stylesheets/public/vendor/responsive.min.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body class="main-body">
+    <form id="form1" runat="server">
+        <asp:ContentPlaceholder runat="server" ID="header" />
+        <asp:ContentPlaceholder runat="server" ID="ImageSlider" />
+        <asp:ContentPlaceholder runat="server" ID="News" />
+        <asp:ContentPlaceholder runat="server" ID="BigImages" />
+        <asp:ContentPlaceholder runat="server" ID="ConnectWhitUs" />
+        <asp:ContentPlaceholder runat="server" ID="Footer" />
+   </form>
+    <%--<script type="text/javascript" src="/assets/scriptings/public/vendor/jquery.min.js"></script>--%>
+
+    <script type="text/javascript" src="/assets/scriptings/public/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/scriptings/public/vendor/wow.min.js"></script>
+    <%--<script type="text/javascript" src="/assets/scriptings/public/vendor/slider.min.js"></script>--%>
+    <script type="text/javascript" src="/assets/scriptings/public/index.min.js"></script>
+</body>
+</html>

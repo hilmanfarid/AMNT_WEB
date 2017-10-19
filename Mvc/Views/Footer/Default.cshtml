@@ -1,0 +1,85 @@
+<footer>
+    <div class="container-fluid">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="left-point">
+                <h3 id="copyright">© 2017 PT Amman Mineral Nusa Tenggara</h3>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+            <div class="right-point">
+                <div class="social">
+                    <ul>
+                        <li>
+                            <a id="facebookFooter" href="#!">
+                                <span class="fa-stack fa-sm">
+                                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-icon"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="instagramFooter" href="#!">
+                                <span class="fa-stack fa-sm">
+                                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                    <i class="fa fa-instagram fa-stack-1x fa-icon"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="linkedinFooter" href="#!">
+                                <span class="fa-stack fa-sm">
+                                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-icon"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="twitterFooter" href="#!">
+                                <span class="fa-stack fa-sm">
+                                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-icon"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text">
+                    <ul>
+                        <li><a id="link1" href="#!">Sitemap</a></li>
+                        <li><a id="link2" href="#!">Term of Use</a></li>
+                        <li><a id="link3" href="#!">Privacy Policy</a></li>
+                        <li><a id="link4" href="#!">Contact Us</a></li>
+                        <li><a id="link5" href="#!">Career</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript">
+    var copyright = "© 2017 PT Amman Mineral Nusa Tenggara";
+
+    setFooter();
+
+    function setFooter() {
+        $.ajax({
+            type: 'GET',
+            url: "@System.Configuration.ConfigurationManager.AppSettings["ApiUrl"]" + "footer/getfooter",
+            async: false,
+            success: function (result) {
+                //console.log(result);
+                if (result[0].content != null)
+                    copyright = result[0].content;
+
+                $("#copyright").html(copyright);
+
+                $("#facebookFooter").prop("href", facebook);
+                $("#twitterFooter").prop("href", instagram);
+                $("#instagramFooter").prop("href", linkedin);
+                $("#linkedinFooter").prop("href", twitter);
+            }
+        });
+    }
+
+</script>

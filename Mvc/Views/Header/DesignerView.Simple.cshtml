@@ -1,0 +1,345 @@
+﻿@using Telerik.Sitefinity.Mvc;
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+
+<style>
+    .btn-file {
+        position: relative;
+        overflow: hidden;
+    }
+
+        .btn-file input[type=file] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            min-width: 100%;
+            min-height: 100%;
+            font-size: 100px;
+            text-align: right;
+            filter: alpha(opacity=0);
+            opacity: 0;
+            outline: none;
+            background: white;
+            cursor: inherit;
+            display: block;
+        }
+
+    #img-upload {
+        width: 100%;
+    }
+</style>
+<form>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Facebook</label>
+                <input type="text" id="facebookInput" placeholder="Facebook Url" class="form-control" />
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Instagram</label>
+                <input type="text" id="instagramInput" placeholder="Instagram Url" class="form-control" />
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Twitter</label>
+                <input type="text" id="twitterInput" placeholder="Twitter Url" class="form-control" />
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Linkedin</label>
+                <input type="text" id="linkedinInput" placeholder="Linkedin Url" class="form-control" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Logo</label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <span class="btn btn-default btn-file">
+                            Browse… <input type="file" id="imgInp">
+                        </span>
+                    </span>
+                    <input type="text" class="form-control" readonly>
+                </div>
+                <img id='img-upload' />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>Home</label>
+                <input type="text" id="homeInput" placeholder="Home Url" class="form-control" />
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>About Us</label>
+                <input type="text" id="aboutusInput" placeholder="About Us Url" class="form-control" />
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>Leadership</label>
+                <input type="text" id="leadershipInput" placeholder="Leadership Url" class="form-control" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>Values</label>
+                <input type="text" id="valuesInput" placeholder="Values Url" class="form-control" />
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>Business Direction</label>
+                <input type="text" id="businesdirectionInput" placeholder="Business Direction Url" class="form-control" />
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>Working AT PT AMNT</label>
+                <input type="text" id="workingatptamntInput" placeholder="Working AT PT AMNT Url" class="form-control" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>Culture</label>
+                <input type="text" id="cultureInput" placeholder="Culture Url" class="form-control" />
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>Career</label>
+                <input type="text" id="careerInput" placeholder="Career Url" class="form-control" />
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>Partner</label>
+                <input type="text" id="partnerInput" placeholder="Partner Url" class="form-control" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>Social Initiative</label>
+                <input type="text" id="socialInitiativeInput" placeholder="Social Initiative Url" class="form-control" />
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>Overview</label>
+                <input type="text" id="overviewInput" placeholder="Overview Url" class="form-control" />
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>Production</label>
+                <input type="text" id="productionInput" placeholder="Production Url" class="form-control" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>Refinery</label>
+                <input type="text" id="refineryInput" placeholder="Refinery Url" class="form-control" />
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>Tranfortation</label>
+                <input type="text" id="transfortationInput" placeholder="Transfortation Url" class="form-control" />
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>Expansion</label>
+                <input type="text" id="expansionInput" placeholder="Expansion Url" class="form-control" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>Sustainable</label>
+                <input type="text" id="sustainableInput" placeholder="Sustainable Url" class="form-control" />
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>Evironmental Practice</label>
+                <input type="text" id="evironmentalpracticeInput" placeholder="Evironmental Practice Url" class="form-control" />
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>Healt And Safety</label>
+                <input type="text" id="healtandsafetyInput" placeholder="Healt And Safety Url" class="form-control" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>News</label>
+                <input type="text" id="newsInput" placeholder="News Url" class="form-control" />
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>Gallery</label>
+                <input type="text" id="galleryInput" placeholder="Gallery Url" class="form-control" />
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>Download Center</label>
+                <input type="text" id="downloadcenterInput" placeholder="Download Center Url" class="form-control" />
+            </div>
+        </div>
+    </div>
+
+    <script type="text/ng-template" section="modal-footer">
+        <input type="button" class="btn btn-primary" onclick="save()" value="Save">
+        <a class="btn btn-link" id="cancel" data-dismiss="modal" ng-click="cancel()">Cancel</a>
+    </script>
+
+    <script type="text/javascript">
+        $("#facebookInput").val(facebook);
+        $("#instagramInput").val(instagram);
+        $("#linkedinInput").val(linkedin);
+        $("#twitterInput").val(twitter);
+
+        $("#homeInput").val(home);
+        $("#aboutusInput").val(aboutus);
+        $("#leadershipInput").val(leadership);
+        $("#valuesInput").val(values);
+        $("#businesdirectionInput").val(businessdirection);
+        $("#workingatptamntInput").val(workingatptamnt);
+        $("#cultureInput").val(culture);
+        $("#careerInput").val(career);
+        $("#partnerInput").val(partner);
+        $("#socialInitiativeInput").val(socialinitiatives);
+        $("#overviewInput").val(overview);
+        $("#productionInput").val(production);
+        $("#refineryInput").val(refinery);
+        $("#transfortationInput").val(transportation);
+        $("#expansionInput").val(expansion);
+        $("#sustainableInput").val(sustainable);
+        $("#evironmentalpracticeInput").val(eviromentalpractice);
+        $("#healtandsafetyInput").val(healthdsafety);
+        $("#newsInput").val(news);
+        $("#galleryInput").val(gallery);
+        $("#downloadcenterInput").val(donwloadcenter);
+
+        function save() {
+            var fileUpload = $("#imgInp").get(0);
+            var files = fileUpload.files;  
+              
+            // Create FormData object  
+            var fileData = new FormData();  
+  
+            // Looping over all files and add it to FormData object  
+            for (var i = 0; i < files.length; i++) {  
+                fileData.append(files[i].name, files[i]);  
+            }  
+              
+            fileData.append("facebook", $("#facebookInput").val());
+            fileData.append("instagram", $("#instagramInput").val());
+            fileData.append("linkedin", $("#linkedinInput").val());
+            fileData.append("twitter", $("#twitterInput").val());
+            fileData.append("homeInput", $("#homeInput").val());
+            fileData.append("aboutusInput", $("#aboutusInput").val());
+            fileData.append("leadershipInput", $("#leadershipInput").val());
+            fileData.append("valuesInput", $("#valuesInput").val());
+            fileData.append("businesdirectionInput", $("#businesdirectionInput").val());
+            fileData.append("workingatptamntInput", $("#workingatptamntInput").val());
+            fileData.append("cultureInput", $("#cultureInput").val());
+            fileData.append("careerInput", $("#careerInput").val());
+            fileData.append("partnerInput", $("#partnerInput").val());
+            fileData.append("socialInitiativeInput", $("#socialInitiativeInput").val());
+            fileData.append("overviewInput", $("#overviewInput").val());
+            fileData.append("productionInput", $("#productionInput").val());
+            fileData.append("refineryInput", $("#refineryInput").val());
+            fileData.append("transfortationInput", $("#transfortationInput").val());
+            fileData.append("expansionInput", $("#expansionInput").val());
+            fileData.append("sustainableInput", $("#sustainableInput").val());
+            fileData.append("evironmentalpracticeInput", $("#evironmentalpracticeInput").val());
+            fileData.append("healtandsafetyInput", $("#healtandsafetyInput").val());
+            fileData.append("newsInput", $("#newsInput").val());
+            fileData.append("galleryInput", $("#galleryInput").val());
+            fileData.append("downloadcenterInput", $("#downloadcenterInput").val());
+
+            $.ajax({
+                type: 'POST',
+                url: "@System.Configuration.ConfigurationManager.AppSettings["ApiUrl"]" + "header/setheader",
+                data: fileData,
+                contentType: false, // Not to set any content header  
+                processData: false, // Not to process data  
+                async: false,
+                success: function (result) {
+                    console.log(result);
+                }
+            });
+
+            $('#cancel').click();
+        }
+
+        $(document).ready(function () {
+            $('#img-upload').attr('src', "@System.Configuration.ConfigurationManager.AppSettings["ApiUrl"]" + logo);
+
+            $(document).on('change', '.btn-file :file', function () {
+                var input = $(this),
+                    label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+                input.trigger('fileselect', [label]);
+            });
+
+            $('.btn-file :file').on('fileselect', function (event, label) {
+
+                var input = $(this).parents('.input-group').find(':text'),
+                    log = label;
+
+                if (input.length) {
+                    input.val(log);
+                } else {
+                    if (log) alert(log);
+                }
+
+            });
+
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('#img-upload').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+
+            $("#imgInp").change(function () {
+                readURL(this);
+            });
+        });
+    </script>
+</form>
+

@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" %>
+<html lang="en">
+<head id="Head2" runat="server">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Homepages</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+</head>
+<body>
+    <form id="form2" runat="server">
+        <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="container">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i> <span class="close-popup">&nbsp CLOSE</span></button>
+                                <a href="#" class="navbar-brands">
+                                    <img src="/assets/storages/image/brand/logo-second.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container padd-mobile">
+                                <div class="col-menu">
+                                    <div class="col-md-12 padd-mobile">
+                                        <div class="col-md-4">
+                                            <div class="content-menu no-border">
+                                                <h2>HOME</h2>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="content-menu">
+                                                <div class="col-border-story">
+                                                    <a href="about"><h2>OUR STORY</h2></a>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="about">ABOUT US</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="##">LEADERSHIP</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="##">VALUES</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="##">BUSINESS DIRECTION</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="content-menu">
+                                                <div class="col-border-operation">
+                                                    <a href="our-operation"><h2>OUR OPERATIONS</h2></a>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="our-operation">OVERVIEW</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="our-operation#second">PRODUCTION</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="our-operation#fourth">REFINERY</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="our-operation#third">TRANSPORTATION</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="our-operation#fifth">EXPANSION</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="our-operation#sixth">SUSTAINABLE ENVIRONMENTAL PRACTICE</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="##">HEALTH AND SAFETY</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-4">
+                                            <div class="content-menu">
+                                                <div class="col-border-people">
+                                                    <a href="our-people"><h2>OUR PEOPLE</h2></a>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="##">WORKING AT PT AMNT</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">CULTURE</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">CAREER</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="##">PARTNER</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">SOCIAL INITIATIVES</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="content-menu">
+                                                <div class="col-border-media">
+                                                    <h2>MEDIA CENTER</h2>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="news">NEWS</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="##">GALLERY</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="##">DOWNLOAD CENTER</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <asp:ContentPlaceholder runat="server" ID="body" />
+    </form>
+</body>
+</html>

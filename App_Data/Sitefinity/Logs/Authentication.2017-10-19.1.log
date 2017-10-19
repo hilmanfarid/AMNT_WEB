@@ -1,0 +1,29 @@
+----------------------------------------
+Timestamp: 10/17/2017 6:33:50 AM
+
+Message: Identity Server: NoSignInCookie
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: WIN-AC96LSD15K3
+
+App Domain: /LM/W3SVC/8/ROOT-2-131526951355565901
+
+ProcessId: 4040
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:2396
+
+Extended Properties: 
+----------------------------------------
