@@ -1,3 +1,11 @@
 /App_Data/Sitefinity/Logs
 /App_Data/Sitefinity/Temp
 /web.config
+/SitefinityWebApp.v12.suo
+/UpgradeLog.htm
+/UpgradeLog2.htm
+/UpgradeLog3.htm
+/SitefinityWebApp.sln
+/SitefinityWebApp.sln.DotSettings.user
+/obj
+/.vs

@@ -1,0 +1,107 @@
+﻿<%@ Master Language="C#" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/assets/stylesheets/public/vendor/owl.carousel.min.css">
+	<link rel="stylesheet" href="/assets/stylesheets/public/vendor/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/assets/stylesheets/public/vendor/colorbox.css">
+	<link rel="stylesheet" href="/assets/stylesheets/public/global.min.css">
+	<link rel="stylesheet" href="/assets/stylesheets/public/vendor/about.min.css">
+	<link rel="stylesheet" href="/assets/stylesheets/public/vendor/responsive.min.css">
+	<!-- Stylesheets Declaration - END -->
+
+	<!-- javascript -->
+	<script type="text/javascript" src="/assets/scriptings/public/vendor/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/scriptings/public/vendor/owl.carousel.min.js"></script>
+</head>
+<body class="main-body">
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="HeaderPlaceholder" runat="server" />	          
+   </form>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.debug.js"></script>
+		<script type="text/javascript" src="assets/scriptings/public/vendor/bootstrap.min.js"></script>
+		<script src="/assets/scriptings/public/vendor/stickUp.min.js"  type="text/javascript"></script>
+		<script src="/assets/scriptings/public/vendor/about.js"  type="text/javascript"></script>
+
+		<script>
+			$(document).ready(function () {
+				var owl = $('.owl-carousel');
+				owl.owlCarousel({
+					//margin: 10,
+					nav: true,
+					loop: true,
+					responsive: {
+						0: {
+							items: 1
+						},
+						600: {
+							items: 3
+						},
+						1000: {
+							items: 3
+						}
+					}
+				})
+			})
+			</script>
+			<script>
+				'use strict';
+				var dots = 6;
+				var sliderElem = document.querySelector('.slider');
+				var dotElems = sliderElem.querySelectorAll('.slider__dot');
+				var indicatorElem = sliderElem.querySelector('.slider__indicator');
+
+				Array.prototype.forEach.call(dotElems, function (dotElem) {
+					dotElem.addEventListener('click', function (e) {
+						var currentPos = parseInt(sliderElem.getAttribute('data-pos'));
+						var newPos = parseInt(dotElem.getAttribute('data-pos'));
+
+						var newDirection = newPos > currentPos ? 'right' : 'left';
+						var currentDirection = newPos < currentPos ? 'right' : 'left';
+
+						indicatorElem.classList.remove('slider__indicator--' + currentDirection);
+						indicatorElem.classList.add('slider__indicator--' + newDirection);
+						sliderElem.setAttribute('data-pos', newPos);
+					});
+				});
+		</script>
+		<script>
+			$(function () {
+
+				$('[data-scrollmagic]').each(function (index, elem) {
+					// Init ScrollMagic Controller
+					var scrollMagicController = new ScrollMagic();
+
+					// Create Animations
+					var title = $(elem).find('h2'),
+						text = $(elem).find('p'),
+						btn = $(elem).find('a');
+
+					var tl = new TimelineMax({ pause: true });
+					tl.add("start") // add timeline label
+					  .fromTo(title, 0.4, { y: '40px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
+					  .fromTo(text, 0.4, { y: '60px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
+					  .fromTo(btn, 0.4, { y: '100px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
+
+					// Create the Scene and trigger when visible
+					var scene = new ScrollScene({
+						triggerElement: elem,
+						offset: 0 /* offset the trigger Npx below scene's top */
+					})
+					.setTween(tl)
+					.addTo(scrollMagicController);
+
+					// Add debug indicators fixed on right side
+					//scene.addIndicators(); 
+				});
+			});
+		</script>  
+</body>
+</html>
+
