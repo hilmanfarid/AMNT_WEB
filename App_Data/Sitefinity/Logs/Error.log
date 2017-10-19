@@ -7402,3 +7402,207 @@ Win32 ThreadId:10008
 
 Extended Properties: 
 ----------------------------------------
+----------------------------------------
+Timestamp: 19/10/2017 11.46.59
+
+Message: Timestamp: 19/10/2017 11.46.59
+Message: System.TypeInitializationException: The type initializer for 'Telerik.Sitefinity.Security.SecurityManager' threw an exception. ---> System.Exception: Unable to upgrade database schema metadataSource provided by 'Telerik.Sitefinity.Configuration.Data.OpenAccessXmlConfigStorageProvider': Login failed for user 'sitefinity'. ---> Telerik.OpenAccess.Exceptions.AuthorizationException: Login failed for user 'sitefinity'. ---> Telerik.OpenAccess.RT.sql.SQLException: Login failed for user 'sitefinity'. ---> System.Data.SqlClient.SqlException: Login failed for user 'sitefinity'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at OpenAccessRuntime.Intellitrace.OpenConnection(DbConnection connection, String connectionString, String id)
+   at Telerik.OpenAccess.RT.Adonet2Generic.Impl.DBDriver.connect(ConnectionString connectionString, PropertySet driverProps, ConnectionPoolType poolType, LogEventStore pes)
+   --- End of inner exception stack trace ---
+   at Telerik.OpenAccess.RT.Adonet2Generic.Impl.DBDriver.connect(ConnectionString connectionString, PropertySet driverProps, ConnectionPoolType poolType, LogEventStore pes)
+   at OpenAccessRuntime.Relational.sql.SqlDriver.InitializeFor(ConnectionString connectionString, Boolean noConnect, PropertySet props, DBDriver& driver, Connection& conn, ConnectionPoolType poolType)
+   --- End of inner exception stack trace ---
+   at OpenAccessRuntime.ExceptionWrapper.Throw()
+   at OpenAccessRuntime.storagemanager.StorageManagerFactoryBuilder.createSmfForURL()
+   at OpenAccessRuntime.storagemanager.StorageManagerFactoryBuilder.createStorageManagerFactory()
+   at OpenAccessRuntime.DataObjects.PersistenceManagerFactoryImp.createStorageManagerFactory()
+   at OpenAccessRuntime.DataObjects.PersistenceManagerFactoryBase.init()
+   at OpenAccessRuntime.DataObjects.PersistenceManagerFactoryImp.init()
+   at OpenAccessRuntime.DataObjects.BootstrapPMF.getPersistenceManagerFactory(PropertySet props)
+   at OpenAccessRuntime.Helper.getPersistenceManagerFactory(PropertySet props)
+   at OpenAccessRuntime.DatabaseAdapter.AssertPersistenceManagerFactory(String usr, String password, Boolean open)
+   at OpenAccessRuntime.DatabaseAdapter.GetObjectScope(TransactionProvider provider)
+   at Telerik.OpenAccess.Database.GetObjectScope(TransactionProvider provider)
+   at Telerik.OpenAccess.OpenAccessContextBase.GetScope()
+   at Telerik.OpenAccess.OpenAccessContext.GetAllCore[T]()
+   at Telerik.OpenAccess.OpenAccessContext.GetAll[T]()
+   at Telerik.Sitefinity.Configuration.Data.OpenAccessXmlConfigStorageProvider.Telerik.Sitefinity.Data.OA.IOpenAccessSelfUpgradableProvider.Update(OpenAccessConnection oaConnection, Database database, String newConnectionString, MetadataContainer newMetadataContainer, UpgradeDatabaseScheme defaultUpgradeSchemeMethod)
+   at Telerik.Sitefinity.Data.OA.OpenAccessConnection.MetadataUpgradeFacade.UpgradeSchema(ISchemaHandler schemaHandler)
+   --- End of inner exception stack trace ---
+   at Telerik.Sitefinity.Data.OA.OpenAccessConnection.HandleDatabaseUpgrade(MetadataContainer newMetadataContainer, String moduleName, ISitefinityMetadataSource sitefinityMetaDataSource, IOpenAccessMetadataProvider provider, Database database, String connString)
+   at Telerik.Sitefinity.Data.OA.OpenAccessConnection.OptimizedMetadataUpdateStrategy.ReplaceMetadata(OpenAccessConnection connection, MetadataContainer newMetadataContainer, String moduleName, ISitefinityMetadataSource sitefinityMetaDataSource, IOpenAccessMetadataProvider provider)
+   at Telerik.Sitefinity.Data.OA.OpenAccessConnection.UpdateMetadata(MetadataSource metadataSource, String moduleName, IOpenAccessMetadataProvider provider, IEnumerable`1 combinedModules)
+   at Telerik.Sitefinity.Data.OA.OpenAccessConnection.Extend(MetadataSource metadataSource, String moduleName, IOpenAccessMetadataProvider provider, Boolean safeMode, IEnumerable`1 combinedModules)
+   at Telerik.Sitefinity.Data.OA.OpenAccessConnection.RegisterProviderInternal(IOpenAccessMetadataProvider provider, Boolean forceDatabaseInit, Boolean safeMode)
+   at Telerik.Sitefinity.Data.OA.OpenAccessConnection.InitializeProvider(IOpenAccessMetadataProvider provider, String connectionName, Boolean safeMode)
+   at Telerik.Sitefinity.Data.OA.OpenAccessConnection.GetContext(IOpenAccessMetadataProvider provider, String connectionName, Boolean safeMode)
+   at Telerik.Sitefinity.Configuration.Data.OpenAccessXmlConfigStorageProvider.GetElement(String path)
+   at Telerik.Sitefinity.Configuration.Data.XmlConfigProvider.GetElementDatabaseReader(String path)
+   at Telerik.Sitefinity.Configuration.Data.XmlConfigProvider.LoadElementFromDatabase(ConfigSection section, LoadContext loadContext)
+   at Telerik.Sitefinity.Configuration.Data.XmlConfigProvider.TryLoadSectionFromDatabase(ConfigSection section, Boolean initial, LoadContext loadContext)
+   at Telerik.Sitefinity.Configuration.Data.XmlConfigProvider.LoadSection(ConfigSection section)
+   at Telerik.Sitefinity.Configuration.ConfigSection.Initialize(ConfigProvider provider)
+   at Telerik.Sitefinity.Configuration.Config.GetSectionInternal(Type sectionType, Boolean safeMode, String sectionName)
+   at Telerik.Sitefinity.Configuration.Config.GetSectionPrivate(Type sectionType, Boolean safeMode, String sectionName)
+   at Telerik.Sitefinity.Configuration.Config.GetSectionPrivate[TSection](Boolean safeMode)
+   at Telerik.Sitefinity.Configuration.Config.Get[TSection](Boolean safeMode)
+   at Telerik.Sitefinity.Configuration.Config.Get[TSection]()
+   at Telerik.Sitefinity.Security.SecurityManager..cctor()
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.RuntimeHelpers._RunClassConstructor(RuntimeType type)
+   at System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(RuntimeTypeHandle type)
+   at Telerik.Sitefinity.Services.SystemManager.Initialize()
+   at Telerik.Sitefinity.Abstractions.Bootstrapper.RegisterRoutes()
+   at Telerik.Sitefinity.Abstractions.Bootstrapper.Bootstrap()
+   at Telerik.Sitefinity.Web.SitefinityHttpModule.<Init>b__2(Object ctx)
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+Category: 
+Priority: -1
+EventId: 0
+Severity: Critical
+Title:
+Machine: X2-13
+App Domain: /LM/W3SVC/2/ROOT-2-131528871980536810
+ProcessId: 20116
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+Thread Name: 
+Win32 ThreadId:16608
+Extended Properties: 
+
+Category: ErrorLog
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: X2-13
+
+App Domain: /LM/W3SVC/2/ROOT-2-131528871980536810
+
+ProcessId: 20116
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:16608
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 19/10/2017 11.47.18
+
+Message: Timestamp: 19/10/2017 11.47.18
+Message: System.TypeInitializationException: The type initializer for 'Telerik.Sitefinity.Security.SecurityManager' threw an exception. ---> System.Exception: Unable to upgrade database schema metadataSource provided by 'Telerik.Sitefinity.Configuration.Data.OpenAccessXmlConfigStorageProvider': Login failed for user 'sitefinity'. ---> Telerik.OpenAccess.Exceptions.AuthorizationException: Login failed for user 'sitefinity'. ---> Telerik.OpenAccess.RT.sql.SQLException: Login failed for user 'sitefinity'. ---> System.Data.SqlClient.SqlException: Login failed for user 'sitefinity'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at OpenAccessRuntime.Intellitrace.OpenConnection(DbConnection connection, String connectionString, String id)
+   at Telerik.OpenAccess.RT.Adonet2Generic.Impl.DBDriver.connect(ConnectionString connectionString, PropertySet driverProps, ConnectionPoolType poolType, LogEventStore pes)
+   --- End of inner exception stack trace ---
+   at Telerik.OpenAccess.RT.Adonet2Generic.Impl.DBDriver.connect(ConnectionString connectionString, PropertySet driverProps, ConnectionPoolType poolType, LogEventStore pes)
+   at OpenAccessRuntime.Relational.sql.SqlDriver.InitializeFor(ConnectionString connectionString, Boolean noConnect, PropertySet props, DBDriver& driver, Connection& conn, ConnectionPoolType poolType)
+   --- End of inner exception stack trace ---
+   at OpenAccessRuntime.ExceptionWrapper.Throw()
+   at OpenAccessRuntime.storagemanager.StorageManagerFactoryBuilder.createSmfForURL()
+   at OpenAccessRuntime.storagemanager.StorageManagerFactoryBuilder.createStorageManagerFactory()
+   at OpenAccessRuntime.DataObjects.PersistenceManagerFactoryImp.createStorageManagerFactory()
+   at OpenAccessRuntime.DataObjects.PersistenceManagerFactoryBase.init()
+   at OpenAccessRuntime.DataObjects.PersistenceManagerFactoryImp.init()
+   at OpenAccessRuntime.DataObjects.BootstrapPMF.getPersistenceManagerFactory(PropertySet props)
+   at OpenAccessRuntime.Helper.getPersistenceManagerFactory(PropertySet props)
+   at OpenAccessRuntime.DatabaseAdapter.AssertPersistenceManagerFactory(String usr, String password, Boolean open)
+   at OpenAccessRuntime.DatabaseAdapter.GetObjectScope(TransactionProvider provider)
+   at Telerik.OpenAccess.Database.GetObjectScope(TransactionProvider provider)
+   at Telerik.OpenAccess.OpenAccessContextBase.GetScope()
+   at Telerik.OpenAccess.OpenAccessContext.GetAllCore[T]()
+   at Telerik.OpenAccess.OpenAccessContext.GetAll[T]()
+   at Telerik.Sitefinity.Configuration.Data.OpenAccessXmlConfigStorageProvider.Telerik.Sitefinity.Data.OA.IOpenAccessSelfUpgradableProvider.Update(OpenAccessConnection oaConnection, Database database, String newConnectionString, MetadataContainer newMetadataContainer, UpgradeDatabaseScheme defaultUpgradeSchemeMethod)
+   at Telerik.Sitefinity.Data.OA.OpenAccessConnection.MetadataUpgradeFacade.UpgradeSchema(ISchemaHandler schemaHandler)
+   --- End of inner exception stack trace ---
+   at Telerik.Sitefinity.Data.OA.OpenAccessConnection.HandleDatabaseUpgrade(MetadataContainer newMetadataContainer, String moduleName, ISitefinityMetadataSource sitefinityMetaDataSource, IOpenAccessMetadataProvider provider, Database database, String connString)
+   at Telerik.Sitefinity.Data.OA.OpenAccessConnection.OptimizedMetadataUpdateStrategy.ReplaceMetadata(OpenAccessConnection connection, MetadataContainer newMetadataContainer, String moduleName, ISitefinityMetadataSource sitefinityMetaDataSource, IOpenAccessMetadataProvider provider)
+   at Telerik.Sitefinity.Data.OA.OpenAccessConnection.UpdateMetadata(MetadataSource metadataSource, String moduleName, IOpenAccessMetadataProvider provider, IEnumerable`1 combinedModules)
+   at Telerik.Sitefinity.Data.OA.OpenAccessConnection.Extend(MetadataSource metadataSource, String moduleName, IOpenAccessMetadataProvider provider, Boolean safeMode, IEnumerable`1 combinedModules)
+   at Telerik.Sitefinity.Data.OA.OpenAccessConnection.RegisterProviderInternal(IOpenAccessMetadataProvider provider, Boolean forceDatabaseInit, Boolean safeMode)
+   at Telerik.Sitefinity.Data.OA.OpenAccessConnection.InitializeProvider(IOpenAccessMetadataProvider provider, String connectionName, Boolean safeMode)
+   at Telerik.Sitefinity.Data.OA.OpenAccessConnection.GetContext(IOpenAccessMetadataProvider provider, String connectionName, Boolean safeMode)
+   at Telerik.Sitefinity.Configuration.Data.OpenAccessXmlConfigStorageProvider.GetElement(String path)
+   at Telerik.Sitefinity.Configuration.Data.XmlConfigProvider.GetElementDatabaseReader(String path)
+   at Telerik.Sitefinity.Configuration.Data.XmlConfigProvider.LoadElementFromDatabase(ConfigSection section, LoadContext loadContext)
+   at Telerik.Sitefinity.Configuration.Data.XmlConfigProvider.TryLoadSectionFromDatabase(ConfigSection section, Boolean initial, LoadContext loadContext)
+   at Telerik.Sitefinity.Configuration.Data.XmlConfigProvider.LoadSection(ConfigSection section)
+   at Telerik.Sitefinity.Configuration.ConfigSection.Initialize(ConfigProvider provider)
+   at Telerik.Sitefinity.Configuration.Config.GetSectionInternal(Type sectionType, Boolean safeMode, String sectionName)
+   at Telerik.Sitefinity.Configuration.Config.GetSectionPrivate(Type sectionType, Boolean safeMode, String sectionName)
+   at Telerik.Sitefinity.Configuration.Config.GetSectionPrivate[TSection](Boolean safeMode)
+   at Telerik.Sitefinity.Configuration.Config.Get[TSection](Boolean safeMode)
+   at Telerik.Sitefinity.Configuration.Config.Get[TSection]()
+   at Telerik.Sitefinity.Security.SecurityManager..cctor()
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.RuntimeHelpers._RunClassConstructor(RuntimeType type)
+   at System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(RuntimeTypeHandle type)
+   at Telerik.Sitefinity.Services.SystemManager.Initialize()
+   at Telerik.Sitefinity.Abstractions.Bootstrapper.RegisterRoutes()
+   at Telerik.Sitefinity.Abstractions.Bootstrapper.Bootstrap()
+   at Telerik.Sitefinity.Web.SitefinityHttpModule.<Init>b__2(Object ctx)
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+Category: 
+Priority: -1
+EventId: 0
+Severity: Critical
+Title:
+Machine: X2-13
+App Domain: /LM/W3SVC/2/ROOT-3-131528872301402136
+ProcessId: 20116
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+Thread Name: 
+Win32 ThreadId:16608
+Extended Properties: 
+
+Category: ErrorLog
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: X2-13
+
+App Domain: /LM/W3SVC/2/ROOT-3-131528872301402136
+
+ProcessId: 20116
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:16608
+
+Extended Properties: 
+----------------------------------------
