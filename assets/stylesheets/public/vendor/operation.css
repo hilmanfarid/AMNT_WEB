@@ -70,6 +70,17 @@ h1 {
   color: #fbcd15;
   text-decoration: underline;
 }
+.btn-first {
+  margin-top: 70px;
+}
+a.read-more {
+  color: #8c4023;
+  font-weight: 600;
+  font-size: 14px;
+}
+button.btn-prev {
+  color: #c3c0c0;
+}
 
 section.section-awards .article p{
   padding: 0px !important;
@@ -120,4 +131,7 @@ img.img-people {
   bottom: -472px;
   color: #fff !important;
   right: -25px;
+}
+article{
+	margin-top:75px;
 }

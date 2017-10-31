@@ -17,91 +17,195 @@
 	<!-- javascript -->
 	<script type="text/javascript" src="/assets/scriptings/public/vendor/jquery.min.js"></script>
 	<script type="text/javascript" src="/assets/scriptings/public/vendor/owl.carousel.min.js"></script>
+	<style>
+        .slider__dots .owl-nav .owl-prev {
+            position: absolute;
+            left: 0px;
+            left: -30px;
+            top: 4px;
+        }
+        .slider__dots .owl-nav .owl-next {
+            top: 4px;
+            position: absolute;
+        }
+        .slider__dots .owl-nav i {
+            color: #000;
+            font-size: 28px;
+            text-shadow: none;
+        }
+        .slider__dots .owl-item a {
+            margin: 0px;
+        }
+        
+    </style>
 </head>
 <body class="main-body">
-    <form id="form1" runat="server">
-        <asp:ContentPlaceHolder ID="HeaderPlaceholder" runat="server" />	          
-   </form>
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.debug.js"></script>
-		<script type="text/javascript" src="assets/scriptings/public/vendor/bootstrap.min.js"></script>
-		<script src="/assets/scriptings/public/vendor/stickUp.min.js"  type="text/javascript"></script>
-		<script src="/assets/scriptings/public/vendor/about.js"  type="text/javascript"></script>
+	<form id="form1" runat="server">
+		<asp:ContentPlaceHolder ID="HeaderPlaceholder" runat="server" />	  
+		<asp:ContentPlaceHolder ID="MainContentPlaceholder" runat="server" />
+		<asp:ContentPlaceHolder ID="FooterPlaceholder" runat="server" />		
+	</form>
+	
+	
+	<!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i> <span class="close-popup">&nbsp CLOSE</span></button>
+                        <a href="#" class="navbar-brands">
+                            <img src="assets/storages/image/brand/logo-second.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="container padd-mobile">
+                        <div class="col-menu">
+                            <div class="col-md-12 padd-mobile">
+                                <div class="col-md-4">
+                                    <div class="content-menu no-border">
+                                        <h2>HOME</h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="content-menu">
+                                        <div class="col-border-story">
+                                          <a href="about"><h2>OUR STORY</h2></a>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a href="about">ABOUT US</a>
+                                            </li>
+                                            <li>
+                                                <a href="##">LEADERSHIP</a>
+                                            </li>
+                                            <li>
+                                                <a href="##">VALUES</a>
+                                            </li>
+                                            <li>
+                                                <a href="##">BUSINESS DIRECTION</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="content-menu">
+                                        <div class="col-border-operation">
+                                          <a href="our-operation"><h2>OUR OPERATIONS</h2></a>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a href="our-operation">OVERVIEW</a>
+                                            </li>
+                                            <li>
+                                                <a href="our-operation#second">PRODUCTION</a>
+                                            </li>
+                                            <li>
+                                                <a href="our-operation#fourth">REFINERY</a>
+                                            </li>
+                                            <li>
+                                                <a href="our-operation#third">TRANSPORTATION</a>
+                                            </li>
+                                            <li>
+                                                <a href="our-operation#fifth">EXPANSION</a>
+                                            </li>
+                                            <li>
+                                                <a href="our-operation#sixth">SUSTAINABLE ENVIRONMENTAL PRACTICE</a>
+                                            </li>
+                                            <li>
+                                                <a href="##">HEALTH AND SAFETY</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4">
+                                  <div class="content-menu">
+                                        <div class="col-border-people">
+                                          <a href="our-people"><h2>OUR PEOPLE</h2></a>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a href="##">WORKING AT PT AMNT</a>
+                                            </li>   
+                                            <li>
+                                                <a href="#">CULTURE</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">CAREER</a>
+                                            </li>
+                                            <li>
+                                                <a href="##">PARTNER</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">SOCIAL INITIATIVES</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="content-menu">
+                                        <div class="col-border-media">
+                                          <h2>MEDIA CENTER</h2>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a href="news">NEWS</a>
+                                            </li>
+                                            <li>
+                                                <a href="##">GALLERY</a>
+                                            </li>
+                                            <li>
+                                                <a href="##">DOWNLOAD CENTER</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.debug.js"></script>
+	<script type="text/javascript" src="/assets/scriptings/public/vendor/bootstrap.min.js"></script>
+	<script src="/assets/scriptings/public/vendor/stickUp.min.js"  type="text/javascript"></script>
+	<script>
+		$(function () {
 
-		<script>
-			$(document).ready(function () {
-				var owl = $('.owl-carousel');
-				owl.owlCarousel({
-					//margin: 10,
-					nav: true,
-					loop: true,
-					responsive: {
-						0: {
-							items: 1
-						},
-						600: {
-							items: 3
-						},
-						1000: {
-							items: 3
-						}
-					}
+			$('[data-scrollmagic]').each(function (index, elem) {
+				// Init ScrollMagic Controller
+				var scrollMagicController = new ScrollMagic();
+
+				// Create Animations
+				var title = $(elem).find('h2'),
+					text = $(elem).find('p'),
+					btn = $(elem).find('a');
+
+				var tl = new TimelineMax({ pause: true });
+				tl.add("start") // add timeline label
+				  .fromTo(title, 0.4, { y: '40px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
+				  .fromTo(text, 0.4, { y: '60px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
+				  .fromTo(btn, 0.4, { y: '100px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
+
+				// Create the Scene and trigger when visible
+				var scene = new ScrollScene({
+					triggerElement: elem,
+					offset: 0 /* offset the trigger Npx below scene's top */
 				})
-			})
-			</script>
-			<script>
-				'use strict';
-				var dots = 6;
-				var sliderElem = document.querySelector('.slider');
-				var dotElems = sliderElem.querySelectorAll('.slider__dot');
-				var indicatorElem = sliderElem.querySelector('.slider__indicator');
+				.setTween(tl)
+				.addTo(scrollMagicController);
 
-				Array.prototype.forEach.call(dotElems, function (dotElem) {
-					dotElem.addEventListener('click', function (e) {
-						var currentPos = parseInt(sliderElem.getAttribute('data-pos'));
-						var newPos = parseInt(dotElem.getAttribute('data-pos'));
-
-						var newDirection = newPos > currentPos ? 'right' : 'left';
-						var currentDirection = newPos < currentPos ? 'right' : 'left';
-
-						indicatorElem.classList.remove('slider__indicator--' + currentDirection);
-						indicatorElem.classList.add('slider__indicator--' + newDirection);
-						sliderElem.setAttribute('data-pos', newPos);
-					});
-				});
-		</script>
-		<script>
-			$(function () {
-
-				$('[data-scrollmagic]').each(function (index, elem) {
-					// Init ScrollMagic Controller
-					var scrollMagicController = new ScrollMagic();
-
-					// Create Animations
-					var title = $(elem).find('h2'),
-						text = $(elem).find('p'),
-						btn = $(elem).find('a');
-
-					var tl = new TimelineMax({ pause: true });
-					tl.add("start") // add timeline label
-					  .fromTo(title, 0.4, { y: '40px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
-					  .fromTo(text, 0.4, { y: '60px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
-					  .fromTo(btn, 0.4, { y: '100px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
-
-					// Create the Scene and trigger when visible
-					var scene = new ScrollScene({
-						triggerElement: elem,
-						offset: 0 /* offset the trigger Npx below scene's top */
-					})
-					.setTween(tl)
-					.addTo(scrollMagicController);
-
-					// Add debug indicators fixed on right side
-					//scene.addIndicators(); 
-				});
+				// Add debug indicators fixed on right side
+				//scene.addIndicators(); 
 			});
-		</script>  
+		});
+	</script>  
 </body>
 </html>
 

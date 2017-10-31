@@ -1,0 +1,226 @@
+/*custom*/
+@media (min-width: 1200px){
+    .container { 
+        width: 1130px;
+    }
+}
+.clear{
+    display: block;
+    clear: both;
+}
+
+/*header*/
+nav.nav-custome .navbar-collapse ul li a.nav-link {
+    color: #222 !important;
+    font-size: 22px;
+    font-family: BigNoodle;
+    font-weight: normal;
+    letter-spacing: 4px;
+    border-top: 5px solid transparent;
+}
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        line-height: normal;
+        padding: 0px;
+        padding: 30px 10px;
+    }
+    .navbar-expand-lg .navbar-nav li:last-child .nav-link{
+        padding-right: 0px;
+    }
+}
+.navbar-dark .navbar-brand {
+    color: #fff;
+    padding: 0px;
+    margin: 0px;
+    line-height: normal;
+}
+nav.nav-custome {
+    border-top: 5px solid #222;
+    padding: 0px;
+    border: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 2000;
+}
+nav.nav-custome .navbar-collapse ul li.active a.nav-link,
+nav.nav-custome .navbar-collapse ul li a.nav-link:hover{
+    color: #222;
+    border-top: 5px solid #910a18;
+    position: relative;
+    z-index: 1;
+}
+
+/*middle*/
+#head.about-ami-head{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 90px;
+    margin-top: 90px;
+}
+nav.nav-custome:before{
+    content: ' ';
+    height: 5px;
+    background: #4c4c4c;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+#exTab3 ul li{
+    padding: 1px;
+}
+#exTab3 ul li a {
+    border: 1px solid #212529;
+    padding: 20px 0px;
+    background: #fff;
+    color: #212529;
+    font-size: 16px;
+    font-family: BigNoodle;
+    letter-spacing: 2px;
+    width: 230px;
+    display: block;
+    text-align: center;
+}
+#exTab3 ul li.active a,
+#exTab3 ul li a:hover,
+#exTab3 ul li a.active{
+    background: #910b16;
+    color: #ffffff;
+    border: 1px solid #212529;
+    padding: 20px 0px;
+}
+#exTab3 ul {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+#exTab3 ul li {
+    padding: 1px;
+    display: inline-block;
+    float: none;
+}
+#exTab3{
+    margin-top: -33px;
+}
+#exTab3 .tab-content {
+    margin-top: 70px;
+}
+#tenets .article h2 {
+    margin-bottom: 27px;
+    letter-spacing: 3px;
+    font-size: 31px;
+}
+#tenets .modul h2{
+    margin-bottom: 40px;
+}
+#tenets .article p { 
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+#tenets .article{
+    left: -20px;
+}
+#strategy .modul h2{
+    margin-bottom: 40px;
+}
+#strategy .content p {
+    color: #fff;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 3px;
+}
+#strategy .detail {
+    position: absolute;
+    bottom: -55px;
+    padding: 15px 20px;
+    background: #910b16;
+    width: 75%;
+    right: 15px;
+    height: 100px;
+}
+#strategy .detail p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 0px;
+    line-height: 22px;
+}
+.grid-padding3{
+    padding-right: 3px;
+    padding-left: 3px;
+}
+.row-padding3{
+    margin-right: -3px;
+    margin-left: -3px;
+}
+#news {
+    padding: 20px; 
+}
+#news .col-article p {
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 47px;
+}
+#news .img-news {
+    text-align: center;
+}
+#news .col-article #flip a {
+    border: 1px solid #000;
+    padding: 10px 15px;
+    font-family: "BigNoodle", sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: #000;
+}
+#news .col-article #flip a .fa{
+    margin-left: 15px;
+}
+#news .col-article #flip {
+    bottom: 10%;
+    position: absolute;
+    width: inherit;
+    text-align: right;
+    right: 0;
+}
+#strategy {
+    padding: 70px 15px 140px 15px;
+}
+#contact .maps iframe{
+    width: 100%;
+    height: 413px;
+    display: block;
+}
+.padding0{
+    padding: 0px;
+}
+#contact {
+    padding-top: 80px;
+}
+#contact .col-info h3 {
+    font-size: 3.5em;
+    letter-spacing: 12px;
+    margin-top: 0px !important;
+}
+#contact .col-info p {
+    margin-bottom: 0px;
+    font-size: 17px;
+    line-height: 27px;
+}
+#contact .col-info { 
+    padding: 60px 50px;
+}
+#ap-investment .modul h2{
+    margin-bottom: 40px;
+}
+/*footer*/
+ 
+
+
+
+
+

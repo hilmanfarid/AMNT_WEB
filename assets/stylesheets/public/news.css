@@ -1,3 +1,19 @@
+header.news-header .slide-content{
+	width: 45%;
+    margin: 0 auto;
+}
+header.news-header .slide-content-text>span {
+	width: 100%;
+	font-size: 18px;
+}
+header.news-header .controls-container {
+	bottom: 10%;
+}
+@media (max-height: 790px) {
+	header.news-header .slide-content-text {
+    font-size: 9rem;}
+}
+
 .news {
 	overflow: hidden;
     padding: 50px 0px;
@@ -30,6 +46,52 @@
 	color: #87412D;
 	font-size: 3.5em;
     margin-bottom: 30px;
+}
+
+/**** Section Slide ****/
+.owl-carousel .caption-img {
+  top: 24%;
+  display: table;
+  height: auto;
+  overflow: visible;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  vertical-align: inherit;
+  width: 100%;
+}
+.owl-carousel .caption-img h2 {
+  color: #fff;
+  font-size: 6.5em;
+  letter-spacing: 1px;
+  line-height: 75px;
+}
+.owl-carousel .caption-img p {
+  color: #fff;
+  margin-bottom: 25px;
+  font-family: "Istok Web",sans-serif;
+  font-size: 16px;
+}
+.owl-carousel .caption-img a {
+  color: #FFBE05;
+  font-size: 19px;
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+.owl-theme .owl-nav {
+  display: none;
+}
+.owl-theme .owl-dots {
+  display: table;
+  height: auto;
+  overflow: visible;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 10%;
+}
+.owl-carousel .img-slide {
+  position: relative;
 }
 
 /**** Detail ****/
@@ -80,6 +142,7 @@ body.detailNews footer {
 	position: absolute;
     bottom: 5px;
     padding-left: 20px;
+	font-family: BigNoodle;
 }
 .related .content h3.title{
 	font-size: 1.7rem;
@@ -96,4 +159,47 @@ body.detailNews footer {
 }
 .related .padd{
 	padding: 1px;
+}
+.space-top120{
+	margin-top:120px;
+	display:block;
+}
+nav [data-element=main-navigation] {
+    background-color: #F5EBF0 !important;
+    height: 85px !important;
+}
+.nav>li.sub-nav-menu>a{
+	display:none;
+}
+.navbar-default .container{
+	margin-left:15px;
+}
+ul.nav.navbar-nav.navbar-right{
+	margin-top:22px;
+	left:-44.5px;
+}
+#form1 > div.sfContentBlock > nav > div:nth-child(1) > div{
+	padding-right: 38px;
+    padding-left: 38px;
+}
+.brief-title h1 {
+    letter-spacing: 1px;
+    font-size: 4.5em;
+}
+.brief-title {
+    padding: 0 96px;
+}
+.brief-title p {
+    font-size: 17px;
+    line-height: 30px;
+}
+.detail-news {
+    padding: 70px 0px;
+}
+.thumbs .img-responsive{
+	height :203px;
+}
+footer .container{
+	padding-right: 33px;
+    padding-left: 33px;
 }

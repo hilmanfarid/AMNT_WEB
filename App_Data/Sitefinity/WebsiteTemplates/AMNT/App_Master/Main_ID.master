@@ -1,0 +1,198 @@
+<%@ Master Language="C#" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <link rel="stylesheet" href="/assets/stylesheets/public/vendor/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/stylesheets/public/vendor/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/assets/stylesheets/public/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/stylesheets/public/vendor/animate.min.css">
+	<link rel="stylesheet" href="/assets/stylesheets/public/vendor/slider.min.css">
+    <link rel="stylesheet" href="/assets/stylesheets/public/vendor/cards.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/stylesheets/public/vendor/about.min.css">
+    <link rel="stylesheet" href="/assets/stylesheets/public/global.min.css">
+    <link rel="stylesheet" href="/assets/stylesheets/public/vendor/responsive.min.css">
+    <link rel="stylesheet" href="/assets/stylesheets/custom.css">
+
+
+
+	<style>
+	     .display-hide {
+	         display: none;
+	     }
+	    .slider__dots .owl-nav .owl-prev {
+	        position: absolute;
+	        left: 0px;
+	        left: -30px;
+	        top: 4px;
+	    }
+	    .slider__dots .owl-nav .owl-next {
+	        top: 4px;
+	        position: absolute;
+	    }
+	    .slider__dots .owl-nav i {
+	        color: #000;
+	        font-size: 28px;
+	        text-shadow: none;
+	    }
+	    .slider__dots .owl-item a {
+	        margin: 0px;
+	    }
+		#lang-list-selector > a.sflanguageItem {
+			color : white;
+		}
+		#lang-list-selector > a.sflangSelected {
+			color: #87412D;
+		}
+	</style>
+</head>
+<body class="main-body">
+	<form id="form1" runat="server">  
+        <asp:ContentPlaceHolder ID="TopBarPlaceHolder" runat="server" />
+		<asp:ContentPlaceHolder ID="HeaderPlaceholder" runat="server" />
+		<asp:ContentPlaceHolder ID="MainContentPlaceholder" runat="server" />
+		<asp:ContentPlaceHolder ID="FooterPlaceholder" runat="server" />		  
+			
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="container">
+						<div class="row">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i> <span class="close-popup">&nbsp CLOSE</span></button>
+							<a href="#" class="navbar-brands">
+								<img src="/assets/storages/image/brand/logo-second.png">
+							</a>
+						</div>
+						</div>
+					</div>
+					<div class="modal-body">
+						<div class="container padd-mobile">
+							<div class="col-menu">
+								<div class="col-md-12 padd-mobile">
+									<div class="col-md-4">
+										<div class="content-menu no-border">
+											<h2>BERANDA</h2>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="content-menu">
+											<div class="col-border-story">
+											  <a href="about.html"><h2>CERITA KAMI</h2></a>
+											</div>
+											<ul>
+												<li>
+													<a href="about.html">TENTANG KAMI</a>
+												</li>
+												<li>
+													<a href="##">KEPEMIMPINAN</a>
+												</li>
+												<li>
+													<a href="##">NILAI-NILAI</a>
+												</li>
+												<li>
+													<a href="##">ARAHAN BISNIS</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="content-menu">
+											<div class="col-border-operation">
+											  <a href="our-operation.html"><h2>OPERASI KAMI</h2></a>
+											</div>
+											<ul>
+												<li>
+													<a href="our-operation.html">IKHTISAR</a>
+												</li>
+												<li>
+													<a href="our-operation.html#second">PRODUKSI</a>
+												</li>
+												<li>
+													<a href="our-operation.html#fourth">PEMURNIAN</a>
+												</li>
+												<li>
+													<a href="our-operation.html#third">TRANSPORTASI</a>
+												</li>
+												<li>
+													<a href="our-operation.html#fifth">EKSPANSI</a>
+												</li>
+												<li>
+													<a href="our-operation.html#sixth">PRAKTIK LINGKUNGAN BERKELANJUTAN</a>
+												</li>
+												<li>
+													<a href="##">KESEHATAN DAN KESELAMATAN KERJA</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+									<div class="col-md-4"></div>
+									<div class="col-md-4">
+									  <div class="content-menu">
+											<div class="col-border-people">
+											  <a href="our-people.html"><h2>KHALAYAK KAMI</a>
+											</div>
+											<ul>
+												<li>
+													<a href="##">BEKERJA DI PT AMNT</a>
+												</li>   
+												<li>
+													<a href="#">KULTUR</a>
+												</li>
+												<li>
+													<a href="#">KARIR</a>
+												</li>
+												<li>
+													<a href="##">REKANAN KERJA</a>
+												</li>
+												<li>
+													<a href="#">ISIATIF SOSIAL</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-md-4">
+									  <div class="content-menu">
+											<div class="col-border-media">
+											  <h2>PUSAT MEDIA</h2>
+											</div>
+											<ul>
+												<li>
+													<a href="news.html">BERITA</a>
+												</li>
+												<li>
+													<a href="##">GALLERI</a>
+												</li>
+												<li>
+													<a href="##">PUSAT UNDUH</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.min.js"></script>
+		<script type="text/javascript" src="/assets/scriptings/public/vendor/owl.carousel.min.js"></script>
+	    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+
+	    <script type="text/javascript" src="/assets/scriptings/public/vendor/bootstrap.min.js"></script>
+	
+        <script type="text/javascript" src="/assets/scriptings/public/vendor/wow.min.js"></script>
+        <script type="text/javascript" src="/assets/scriptings/public/index.min.js"></script>
+        <script type="text/javascript" src="/assets/scriptings/public/main.js"></script>
+
+		<asp:ContentPlaceHolder ID="FooterScriptPlaceholder" runat="server" />
+	</form>
+</body>
+</html>
+

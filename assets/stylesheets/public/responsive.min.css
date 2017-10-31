@@ -1,1 +1,250 @@
-@media only screen and (min-device-width:320px) and (max-device-width:480px){.navbar-default .navbar-collapse ul li span,.owl-nav{display:none}.templatemo-top-bar .sosmed ul li{margin:0 5px}.templatemo-top-bar .sosmed ul{margin-top:10px}.templatemo-top-bar .sosmed ul li:nth-child(5) a i{font-size:15px;margin-top:3px}.navbar-default .navbar-collapse .btn-popup{padding-left:7px}.carousel-caption{left:0;right:0}.carousel-caption .col-border{width:51.5%}.center{width:90%;margin:0 auto}.slider__dots{width:100%;bottom:2.5em}.slider__dot,.slider__indicator{height:2em;margin:0 2px}.slider__dot p{text-shadow:none;font-weight:600;font-size:12px;line-height:25px!important;padding:0 2px}.slider[data-pos="0"] .slider__indicator{width:2.8em}.slider[data-pos="1"] .slider__indicator{width:3.3em;left:2.99em}.slider[data-pos="2"] .slider__indicator{left:6.4em;right:9.5em}.slider[data-pos="3"] .slider__indicator{left:13.7em;width:3em}.slider[data-pos="4"] .slider__indicator{left:16.8em;width:2.9em}.slider[data-pos="5"] .slider__indicator{left:20em}.line-header .col-border{width:65.5%}.owl-dots{padding-top:15px}.row_team .card{margin-left:34px}.tag-name h2{right:45%}#shareholders .line-header{margin-top:0}#shareholders .line-header .col-border{width:79.5%}#shareholders .line-header h2{font-size:4em}#shareholders .row-shareholders .desc-shareholder{padding-top:0}#shareholders .col-grafik .text-persen .range h2{font-size:2em}#shareholders .col-grafik .text-persen .range p{font-size:9px}#shareholders .col-grafik .text-persen .pull-left{bottom:-12px;left:16%}#values .line-header .col-border{width:41%}#values .line-header h2{font-size:4em}#values .col-mission{padding-left:30px;padding-top:0}#values .col-mission h2{font-size:2.5em}#values .col-mission p{line-height:20px}#values .no-padding img{margin-bottom:10px}#bisnis-direction .line-header .col-border{width:86.6%}#bisnis-direction .line-header h2{font-size:3em}.modal-content{height:auto}.modal-dialog{margin-left:0;margin-top:0}.modal-open .modal{z-index:9999}.news .slideInUp{margin:2px}.news .padd-custome{padding:0}}@media only screen and (min-width:321px){.navbar-default .navbar-collapse ul li:nth-child(5) a{padding-left:8px}}@media only screen and (max-width:320px){#shareholders .line-header h2,.carousel-caption h1,.line-header h2{font-size:3em}.navbar-default .navbar-collapse ul li span{display:none}.navbar-default .navbar-collapse ul li:nth-child(5) a{padding-left:8px}.carousel-caption .col-border{width:44.5%}.templatemo-team .line-header .col-border{width:54.5%}#shareholders .line-header .col-border{width:70.5%}#shareholders .row-shareholders p{font-size:15px}#values .line-header .col-border{width:34%}#values .line-header h2{font-size:3em}#bisnis-direction .line-header .col-border{width:84.6%}#bisnis-direction .line-header h2{font-size:2.5em}.slider[data-pos="0"] .slider__indicator{width:2.6em}.slider[data-pos="1"] .slider__indicator{width:2.8em;left:2.8em}.slider[data-pos="2"] .slider__indicator{left:5.8em;right:8.8em}.slider[data-pos="3"] .slider__indicator{left:11.7em;right:10em;width:2.9em}.slider[data-pos="4"] .slider__indicator{left:14.8em;right:7em;width:2.7em}.slider[data-pos="5"] .slider__indicator{left:17.5em}.modal-content{height:auto}.modal-dialog{margin-left:0}}@media only screen and (min-device-width:414px) and (max-device-height:736px) and (orientation:portrait){.carousel-caption .col-border{width:44.5%}.line-header .col-border{width:57.5%}#shareholders .line-header .col-border{width:69.5%}#shareholders .col-grafik .text-persen .range h2{font-size:2.5em}#shareholders .col-grafik .text-persen .range p{font-size:11px}#values .line-header .col-border{width:35%}#bisnis-direction .line-header .col-border{width:75.6%}}
+@media only screen and (min-device-width:320px) and (max-device-width:480px) {
+    .navbar-default .navbar-collapse ul li span,
+    .owl-nav {
+        display: none
+    }
+    .templatemo-top-bar .sosmed ul li {
+        margin: 0 5px
+    }
+    .templatemo-top-bar .sosmed ul {
+        margin-top: 10px
+    }
+    .templatemo-top-bar .sosmed ul li:nth-child(5) a i {
+        font-size: 15px;
+        margin-top: 3px
+    }
+    .navbar-default .navbar-collapse .btn-popup {
+        padding-left: 7px
+    }
+    .carousel-caption {
+        left: 0;
+        right: 0
+    }
+    .carousel-caption .col-border {
+        width: 51.5%
+    }
+    .center {
+        width: 90%;
+        margin: 0 auto
+    }
+    .slider__dots {
+        width: 100%;
+        bottom: 2.5em
+    }
+    .slider__dot,
+    .slider__indicator {
+        height: 2em;
+        margin: 0 2px
+    }
+    .slider__dot p {
+        text-shadow: none;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 25px!important;
+        padding: 0 2px
+    }
+    .slider[data-pos="0"] .slider__indicator {
+        width: 2.8em
+    }
+    .slider[data-pos="1"] .slider__indicator {
+        width: 3.3em;
+        left: 2.99em
+    }
+    .slider[data-pos="2"] .slider__indicator {
+        left: 6.4em;
+        right: 9.5em
+    }
+    .slider[data-pos="3"] .slider__indicator {
+        left: 13.7em;
+        width: 3em
+    }
+    .slider[data-pos="4"] .slider__indicator {
+        left: 16.8em;
+        width: 2.9em
+    }
+    .slider[data-pos="5"] .slider__indicator {
+        left: 20em
+    }
+    .line-header .col-border {
+        width: 65.5%
+    }
+    .owl-dots {
+        padding-top: 15px
+    }
+    .row_team .card {
+        margin-left: 34px
+    }
+    .tag-name h2 {
+        right: 45%
+    }
+    #shareholders .line-header {
+        margin-top: 0
+    }
+    #shareholders .line-header .col-border {
+        width: 79.5%
+    }
+    #shareholders .line-header h2 {
+        font-size: 4em
+    }
+    #shareholders .row-shareholders .desc-shareholder {
+        padding-top: 0
+    }
+    #shareholders .col-grafik .text-persen .range h2 {
+        font-size: 2em
+    }
+    #shareholders .col-grafik .text-persen .range p {
+        font-size: 9px
+    }
+    #shareholders .col-grafik .text-persen .pull-left {
+        bottom: -12px;
+        left: 16%
+    }
+    #values .line-header .col-border {
+        width: 41%
+    }
+    #values .line-header h2 {
+        font-size: 4em
+    }
+    #values .col-mission {
+        padding-left: 30px;
+        padding-top: 0
+    }
+    #values .col-mission h2 {
+        font-size: 2.5em
+    }
+    #values .col-mission p {
+        line-height: 20px
+    }
+    #values .no-padding img {
+        margin-bottom: 10px
+    }
+    #bisnis-direction .line-header .col-border {
+        width: 86.6%
+    }
+    #bisnis-direction .line-header h2 {
+        font-size: 3em
+    }
+    .modal-content {
+        height: auto
+    }
+    .modal-dialog {
+        margin-left: 0;
+        margin-top: 0
+    }
+    .modal-open .modal {
+        z-index: 9999
+    }
+    .news .slideInUp {
+        margin: 2px
+    }
+    .news .padd-custome {
+        padding: 0
+    }
+    header.news-header .slide-content {
+    	width: 95%;
+    }
+    body.news-home .slide-content-text {
+    	font-size: 4.5rem;
+    }
+    body.news-home .news {
+    	padding: 37px 0px;
+    }
+}
+
+@media only screen and (min-width:321px) {
+    .navbar-default .navbar-collapse ul li:nth-child(5) a {
+        padding-left: 8px
+    }
+}
+
+@media only screen and (max-width:320px) {
+    #shareholders .line-header h2,
+    .carousel-caption h1,
+    .line-header h2 {
+        font-size: 3em
+    }
+    .navbar-default .navbar-collapse ul li span {
+        display: none
+    }
+    .navbar-default .navbar-collapse ul li:nth-child(5) a {
+        padding-left: 8px
+    }
+    .carousel-caption .col-border {
+        width: 44.5%
+    }
+    .templatemo-team .line-header .col-border {
+        width: 54.5%
+    }
+    #shareholders .line-header .col-border {
+        width: 70.5%
+    }
+    #shareholders .row-shareholders p {
+        font-size: 15px
+    }
+    #values .line-header .col-border {
+        width: 34%
+    }
+    #values .line-header h2 {
+        font-size: 3em
+    }
+    #bisnis-direction .line-header .col-border {
+        width: 84.6%
+    }
+    #bisnis-direction .line-header h2 {
+        font-size: 2.5em
+    }
+    .slider[data-pos="0"] .slider__indicator {
+        width: 2.6em
+    }
+    .slider[data-pos="1"] .slider__indicator {
+        width: 2.8em;
+        left: 2.8em
+    }
+    .slider[data-pos="2"] .slider__indicator {
+        left: 5.8em;
+        right: 8.8em
+    }
+    .slider[data-pos="3"] .slider__indicator {
+        left: 11.7em;
+        right: 10em;
+        width: 2.9em
+    }
+    .slider[data-pos="4"] .slider__indicator {
+        left: 14.8em;
+        right: 7em;
+        width: 2.7em
+    }
+    .slider[data-pos="5"] .slider__indicator {
+        left: 17.5em
+    }
+    .modal-content {
+        height: auto
+    }
+    .modal-dialog {
+        margin-left: 0
+    }
+}
+
+@media only screen and (min-device-width:414px) and (max-device-height:736px) and (orientation:portrait) {
+    .carousel-caption .col-border {
+        width: 44.5%
+    }
+    .line-header .col-border {
+        width: 57.5%
+    }
+    #shareholders .line-header .col-border {
+        width: 69.5%
+    }
+    #shareholders .col-grafik .text-persen .range h2 {
+        font-size: 2.5em
+    }
+    #shareholders .col-grafik .text-persen .range p {
+        font-size: 11px
+    }
+    #values .line-header .col-border {
+        width: 35%
+    }
+    #bisnis-direction .line-header .col-border {
+        width: 75.6%
+    }
+}

@@ -1,0 +1,155 @@
+/*custom*/
+@media (min-width: 1200px){
+    .container { 
+        width: 1130px;
+    }
+}
+.clear{
+    display: block;
+    clear: both;
+}
+.modal-content{
+    background: rgba(255, 255, 255, 0.9);
+}
+.modal-header{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.modal-header{
+    padding-top: 0px;
+}
+.modal-header .close {
+    margin-top: 25px;
+}
+/*header*/
+.navbar-default .navbar-brand{ 
+    height: inherit;
+    padding: 8px 0px;
+    margin: 0px;
+    line-height: normal;
+}
+nav [data-element=main-navigation] {
+    background-color: #f4eded;
+    height: 75px;
+}
+nav [data-element=main-navigation] .navbar-brand img {
+    width: 140px;
+    margin-top: 0px;
+}
+nav [data-element=main-navigation] ul {
+    position: relative;
+    left: inherit;
+    margin-top: 0px;
+}
+.navbar-default .navbar-collapse .btn-popup {
+    color: #8c4023 !important;
+    font-size: 24px;
+    font-family: BigNoodle;
+    background: 0 0;
+    padding: 0px;
+    margin: 0px;
+    line-height: inherit;
+    border: 0px;
+    margin-top: 23px;
+}
+.card__img{
+    width: initial;
+}
+@media (min-width: 768px){
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+        margin-left: 0px;
+    }
+}
+
+/*middle*/
+.owl-theme .owl-dots .owl-dot.active span {
+    height: 7px;
+    position: relative;
+    bottom: -2px;
+}
+body section.news .container-fluid .left-point h3 a { 
+    font-size: 20px;
+}
+body section.news .container-fluid .left-point h3 .separator { 
+    width: 80px; 
+    top: -6.5px;
+    margin-left: 15px;
+}
+body section.connect .text h1{
+    margin-bottom: 30px;
+}
+body section.connect{
+    padding: 40px 0px;
+    padding-bottom: 20px;
+}
+.card { 
+    height: 26rem;
+}
+body section.news .container-fluid .left-point h3 { 
+    right: 0px;
+    margin-top: 110px;
+}
+body section.news .container-fluid .left-point {
+    height: 55.7em;
+}
+.card__content{
+    padding-top: 0px;
+}
+
+
+
+/*footer*/
+footer .fa-icon{
+    font-size: 13.5px;
+    position: relative;
+    top: 0;
+}
+footer h3{
+    margin: 0px;
+}
+footer .right-point .text ul { 
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+footer .right-point .social,
+footer .right-point .text{
+    float: right;
+}
+footer .right-point .social ul,
+footer .right-point .text ul{
+    list-style-type: none;
+    position: relative;
+    top: 0px;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+footer .right-point .text ul li a{ 
+    line-height: 32px;
+}
+footer .left-point h3 { 
+    line-height: 32px;
+}
+body.home footer,
+body.operation footer{ 
+    padding: 5px;
+}
+.sub-nav-menu{
+	display:none;
+}
+.space-top116{
+	margin-top:116px;
+	display:block;
+}
+.space-top120{
+	margin-top:120px;
+	display:block;
+}
+.nav>li.sub-nav-menu>a{
+	display:none;
+}
+
+
+
+

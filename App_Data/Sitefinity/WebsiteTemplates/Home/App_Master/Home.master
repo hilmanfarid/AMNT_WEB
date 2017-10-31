@@ -30,7 +30,7 @@
         <asp:ContentPlaceHolder ID="headerPlaceholder" runat="server" />
 	
         <nav class="navbar navbar-fixed-top">
-      <div data-element="top-navigation">
+		<div data-element="top-navigation">
         <div class="container-fluid container-top">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="right-point">

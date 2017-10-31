@@ -1,0 +1,70 @@
+/*header*/
+ 
+/*middle*/
+#wrapper .section .title-text {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+#wrapper .section .title-text h1 {
+    letter-spacing: 3px;
+    border-bottom: 3px solid;
+    display: inline-block;
+    font-size: 4em;
+}
+#wrapper .section p{
+    padding-right: 30px;
+}
+.card-image img{
+    margin-top: 0px;
+}
+.member-thumb .card-text p {
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+.card.card-animation-move .card-text {
+    transition: all .4s ease;  
+    background: rgba(251, 205, 21, 0.9);
+    overflow: auto;
+}
+.card:hover.card-animation-move .card-text {
+    opacity: 1;
+    top: 0;
+}
+.card:hover.card-animation-move .card-image {
+    transform: none;
+}
+.card.card-animation-move .card-text h3{
+    font-size: 27px;
+    margin-bottom: 10px;
+    margin-top: 38px;
+}
+#wrapper .section .card.card-animation-move .card-text p{
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.operation .card {
+    height: inherit;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: transparent;
+}
+section.section-awards .col-img-awards .col-img img {
+    padding-bottom: 10px;
+}
+section.section-awards .col-img-awards .col-img{
+    margin-top: 0px !important;
+}
+.col-img-awards{
+    padding-top: 15px;
+}
+
+
+/*footer*/
+ 
