@@ -1,3 +1,10 @@
+function goToAwards(){
+	location.href = 'recognition';
+}
+function goToOperation(){
+	location.href = 'our-operation';
+}
+
 var operations = $('#wrapper section');
 $('#wrapper > div').css('width',operations.length+'00vw');
 var sect_width = 100/operations.length;
@@ -23,7 +30,10 @@ $.each(operations, function( index, value ) {
 	}else{
 		var prev_title = $(this).prev().find('.button-order h2').html();
 		$(value).find('.button-order').append(
-			'<button class="btn btn--ghost btn-first" data-scroll="#'+ $(this).prev()[0].id +'"> < '+prev_title+'<i class="icon-angle-right"></i></button>'
+			'<ul class="list--inline">'+
+				'<li><button class="btn btn--ghost btn-prev" data-scroll="#'+$(this).prev()[0].id+'"><i class="icon-angle-left"></i>< '+prev_title+'</button></li>'+
+				'<li><button type="button" onClick="goToAwards()" class="btn btn--ghost">Recognition ><i class="icon-angle-right"></i></button></li>'+
+			'</ul>'
 		)
 	}
 	console.log($(value).id);

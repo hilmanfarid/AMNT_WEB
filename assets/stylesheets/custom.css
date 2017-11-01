@@ -21,6 +21,15 @@
 .modal-header .close {
     margin-top: 25px;
 }
+.social-icon.cfb .fa {
+    color: #3853a1;
+}
+.social-icon.ctwitter .fa {
+    color: #009df8;
+}
+.social-icon.cig .fa {
+    color: #cc2366;
+}
 /*header*/
 .navbar-default .navbar-brand{ 
     height: inherit;

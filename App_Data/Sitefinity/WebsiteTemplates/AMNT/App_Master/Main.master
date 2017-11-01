@@ -80,20 +80,20 @@
 									<div class="col-md-4">
 										<div class="content-menu">
 											<div class="col-border-story">
-											  <a href="about"><h2>OUR STORY</h2></a>
+											  <a href="/about-us"><h2>OUR STORY</h2></a>
 											</div>
 											<ul>
 												<li>
-													<a href="about">ABOUT US</a>
+													<a href="/about-us">ABOUT US</a>
 												</li>
 												<li>
-													<a href="##">LEADERSHIP</a>
+													<a href="/about-us#templatemo-about">LEADERSHIP</a>
 												</li>
 												<li>
-													<a href="##">VALUES</a>
+													<a href="/about-us#values">VALUES</a>
 												</li>
 												<li>
-													<a href="##">BUSINESS DIRECTION</a>
+													<a href="/about-us#bisnis-direction">BUSINESS DIRECTION</a>
 												</li>
 											</ul>
 										</div>
@@ -101,29 +101,29 @@
 									<div class="col-md-4">
 										<div class="content-menu">
 											<div class="col-border-operation">
-											  <a href="our-operation"><h2>OUR OPERATIONS</h2></a>
+											  <a href="/our-operation"><h2>OUR OPERATIONS</h2></a>
 											</div>
 											<ul>
 												<li>
-													<a href="our-operation">OVERVIEW</a>
+													<a href="/our-operation">OVERVIEW</a>
 												</li>
 												<li>
-													<a href="our-operation#second">PRODUCTION</a>
+													<a href="/our-operation#second">PRODUCTION</a>
 												</li>
 												<li>
-													<a href="our-operation#fourth">REFINERY</a>
+													<a href="/our-operation#fourth">REFINERY</a>
 												</li>
 												<li>
-													<a href="our-operation#third">TRANSPORTATION</a>
+													<a href="/our-operation#third">TRANSPORTATION</a>
 												</li>
 												<li>
-													<a href="our-operation#fifth">EXPANSION</a>
+													<a href="/our-operation#fifth">EXPANSION</a>
 												</li>
 												<li>
-													<a href="our-operation#sixth">SUSTAINABLE ENVIRONMENTAL PRACTICE</a>
+													<a href="/our-operation#sixth">SUSTAINABLE ENVIRONMENTAL PRACTICE</a>
 												</li>
 												<li>
-													<a href="##">HEALTH AND SAFETY</a>
+													<a href="/our-operation#">HEALTH AND SAFETY</a>
 												</li>
 											</ul>
 										</div>
@@ -133,23 +133,23 @@
 									<div class="col-md-4">
 									  <div class="content-menu">
 											<div class="col-border-people">
-											  <a href="our-people"><h2>OUR PEOPLE</h2></a>
+											  <a href="/our-people"><h2>OUR PEOPLE</h2></a>
 											</div>
 											<ul>
 												<li>
-													<a href="##">WORKING AT PT AMNT</a>
+													<a href="/workingatptamnt#">WORKING AT PT AMNT</a>
 												</li>   
 												<li>
-													<a href="#">CULTURE</a>
+													<a href="/workingatptamnt#">CULTURE</a>
 												</li>
 												<li>
-													<a href="#">CAREER</a>
+													<a href="/workingatptamnt#">CAREER</a>
 												</li>
 												<li>
-													<a href="##">PARTNER</a>
+													<a href="/workingatptamnt#">PARTNER</a>
 												</li>
 												<li>
-													<a href="#">SOCIAL INITIATIVES</a>
+													<a href="/workingatptamnt#">SOCIAL INITIATIVES</a>
 												</li>
 											</ul>
 										</div>
@@ -161,13 +161,13 @@
 											</div>
 											<ul>
 												<li>
-													<a href="news">NEWS</a>
+													<a href="/news">NEWS</a>
 												</li>
 												<li>
-													<a href="##">GALLERY</a>
+													<a href="/##">GALLERY</a>
 												</li>
 												<li>
-													<a href="##">DOWNLOAD CENTER</a>
+													<a href="/##">DOWNLOAD CENTER</a>
 												</li>
 											</ul>
 										</div>

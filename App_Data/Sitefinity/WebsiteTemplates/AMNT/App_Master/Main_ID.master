@@ -82,20 +82,20 @@
 									<div class="col-md-4">
 										<div class="content-menu">
 											<div class="col-border-story">
-											  <a href="about.html"><h2>CERITA KAMI</h2></a>
+											  <a href="/tentang-kami"><h2>CERITA KAMI</h2></a>
 											</div>
 											<ul>
 												<li>
-													<a href="about.html">TENTANG KAMI</a>
+													<a href="/tentang-kami">TENTANG KAMI</a>
 												</li>
 												<li>
-													<a href="##">KEPEMIMPINAN</a>
+													<a href="/tentang-kami#templatemo-about">KEPEMIMPINAN</a>
 												</li>
 												<li>
-													<a href="##">NILAI-NILAI</a>
+													<a href="/tentang-kami#values">NILAI-NILAI</a>
 												</li>
 												<li>
-													<a href="##">ARAHAN BISNIS</a>
+													<a href="/tentang-kami#bisnis-direction">ARAHAN BISNIS</a>
 												</li>
 											</ul>
 										</div>
@@ -103,29 +103,29 @@
 									<div class="col-md-4">
 										<div class="content-menu">
 											<div class="col-border-operation">
-											  <a href="our-operation.html"><h2>OPERASI KAMI</h2></a>
+											  <a href="/operasi-kami"><h2>OPERASI KAMI</h2></a>
 											</div>
 											<ul>
 												<li>
-													<a href="our-operation.html">IKHTISAR</a>
+													<a href="/operasi-kami">IKHTISAR</a>
 												</li>
 												<li>
-													<a href="our-operation.html#second">PRODUKSI</a>
+													<a href="/operasi-kami#second">PRODUKSI</a>
 												</li>
 												<li>
-													<a href="our-operation.html#fourth">PEMURNIAN</a>
+													<a href="/operasi-kami#fourth">PEMURNIAN</a>
 												</li>
 												<li>
-													<a href="our-operation.html#third">TRANSPORTASI</a>
+													<a href="/operasi-kami#third">TRANSPORTASI</a>
 												</li>
 												<li>
-													<a href="our-operation.html#fifth">EKSPANSI</a>
+													<a href="/operasi-kami#fifth">EKSPANSI</a>
 												</li>
 												<li>
-													<a href="our-operation.html#sixth">PRAKTIK LINGKUNGAN BERKELANJUTAN</a>
+													<a href="/operasi-kami#sixth">PRAKTIK LINGKUNGAN BERKELANJUTAN</a>
 												</li>
 												<li>
-													<a href="##">KESEHATAN DAN KESELAMATAN KERJA</a>
+													<a href="/operasi-kami#">KESEHATAN DAN KESELAMATAN KERJA</a>
 												</li>
 											</ul>
 										</div>

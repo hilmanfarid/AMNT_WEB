@@ -133,5 +133,17 @@ img.img-people {
   right: -25px;
 }
 article{
-	margin-top:75px;
+	margin-top:125px;
+	margin-left:-30px;
+	margin-right: -30px;
+}
+.section.section-awards{
+	padding-bottom : 50px;
+}
+.col-img-awards .card.card-animation-move{
+	box-shadow : 0px 0px 0px;
+}
+.title-awards{
+	margin-left: 32px;
+    margin-top: 46px;
 }
